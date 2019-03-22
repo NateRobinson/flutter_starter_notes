@@ -16,6 +16,12 @@ Learn this project together with the open source book will much be better.
 
 ### 1. Text 相关
 
-[Souce Code: TextAbout.dart](./lib/ui/TextAbout.dart)
+[SouceCode: TextAbout.dart](./lib/ui/TextAbout.dart)
+
+[BookLink: 文本字体样式](https://book.flutterchina.club/chapter3/text.html)
 
 ### 2. Button 相关
+
+[SouceCode: ButtonAbout.dart](./lib/ui/ButtonAbout.dart)
+
+[BookLink: 按钮](https://book.flutterchina.club/chapter3/buttons.html)

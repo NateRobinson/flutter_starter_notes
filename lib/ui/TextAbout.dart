@@ -163,6 +163,23 @@ class TextAbout extends StatelessWidget {
               textAlign: TextAlign.left,
             ),
           ),
+          Container(
+            child: Text(
+              '自定义字体-from package',
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+            ),
+            color: Colors.grey[200],
+            height: 30,
+            alignment: Alignment.centerLeft,
+            padding: EdgeInsets.only(left: 10),
+          ),
+          Container(
+            padding: EdgeInsets.only(left: 10, right: 10, top: 10, bottom: 10),
+            child: Text(
+              "在 https://pub.dartlang.org 找了一圈没有找到合适的库来进行这个 Demo",
+              textAlign: TextAlign.left,
+            ),
+          ),
         ],
       ),
     );

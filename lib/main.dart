@@ -1,9 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 import 'package:flutter_starter_notes/ui/ButtonAbout.dart';
 import 'package:flutter_starter_notes/ui/HomePage.dart';
 import 'package:flutter_starter_notes/ui/TextAbout.dart';
 
-void main() => runApp(MyApp());
+void main() {
+  debugPaintSizeEnabled = false; //打开视觉调试开关
+  runApp(new MyApp());
+}
 
 class MyApp extends StatelessWidget {
   @override

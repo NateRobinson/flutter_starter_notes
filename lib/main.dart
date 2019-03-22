@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_starter_notes/ui/ButtonAbout.dart';
 import 'package:flutter_starter_notes/ui/HomePage.dart';
 import 'package:flutter_starter_notes/ui/TextAbout.dart';
-import 'package:flutter_starter_notes/ui/ButtonAbout.dart';
 
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -17,8 +16,12 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/': (context) => HomePage(),
-        '/textabout': (context) => TextAbout(title: "Text 相关",),
-        '/buttonabout': (context) => ButtonAbout(title: "Button 相关",),
+        '/textabout': (context) => TextAbout(
+              title: "Text 相关",
+            ),
+        '/buttonabout': (context) => ButtonAbout(
+              title: "Button 相关",
+            ),
       },
     );
   }

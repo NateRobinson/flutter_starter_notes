@@ -3,6 +3,7 @@ import 'package:flutter/rendering.dart';
 import 'package:flutter_starter_notes/ui/ButtonAbout.dart';
 import 'package:flutter_starter_notes/ui/HomePage.dart';
 import 'package:flutter_starter_notes/ui/TextAbout.dart';
+import 'package:flutter_starter_notes/ui/ImageAndIconAbout.dart';
 
 void main() {
   debugPaintSizeEnabled = false; //打开视觉调试开关
@@ -25,6 +26,9 @@ class MyApp extends StatelessWidget {
             ),
         '/buttonabout': (context) => ButtonAbout(
               title: "Button 相关",
+            ),
+        '/imageandiconabout': (context) => ImageAndIconAbout(
+              title: "图片及ICON 相关",
             ),
       },
     );

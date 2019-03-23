@@ -6,11 +6,13 @@ class HomePage extends StatelessWidget {
   List<String> strItems = <String>[
     'Text 相关',
     '按钮 相关',
+    '图片及ICON 相关',
   ];
 
   List<String> routers = <String>[
     '/textabout',
     '/buttonabout',
+    '/imageandiconabout',
   ];
 
   Widget buildItem(BuildContext context, String strItem, String router) {

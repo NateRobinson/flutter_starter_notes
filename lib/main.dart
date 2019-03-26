@@ -3,6 +3,9 @@ import 'package:flutter/rendering.dart';
 import 'package:flutter_starter_notes/ui/ButtonAbout.dart';
 import 'package:flutter_starter_notes/ui/HomePage.dart';
 import 'package:flutter_starter_notes/ui/TextAbout.dart';
+import 'package:flutter_starter_notes/ui/ImageAndIconAbout.dart';
+import 'package:flutter_starter_notes/ui/SwitchAndCheckBoxAbout.dart';
+import 'package:flutter_starter_notes/ui/InputAndFormAbout.dart';
 
 void main() {
   debugPaintSizeEnabled = false; //打开视觉调试开关
@@ -24,7 +27,16 @@ class MyApp extends StatelessWidget {
               title: "Text 相关",
             ),
         '/buttonabout': (context) => ButtonAbout(
-              title: "Button 相关",
+              title: "按钮相关",
+            ),
+        '/imageandiconabout': (context) => ImageAndIconAbout(
+              title: "图片及 ICON 相关",
+            ),
+        '/switchandcheckboxabout': (context) => SwitchAndCheckBoxAbout(
+              title: "单选开关和复选框相关",
+            ),
+        '/inputandformabout': (context) => InputAndFormAbout(
+              title: "单选开关和复选框相关",
             ),
       },
     );

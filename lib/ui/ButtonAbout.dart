@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_starter_notes/component/CommonTitle.dart';
 
 class ButtonAbout extends StatelessWidget {
   ButtonAbout({Key key, this.title});
@@ -14,16 +15,7 @@ class ButtonAbout extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: <Widget>[
-            Container(
-              child: Text(
-                'RaisedButton',
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
-              ),
-              color: Colors.grey[200],
-              height: 30,
-              alignment: Alignment.centerLeft,
-              padding: EdgeInsets.only(left: 10),
-            ),
+            CommonTitle('RaisedButton'),
             Container(
               padding:
                   EdgeInsets.only(left: 10, right: 10, top: 10, bottom: 10),
@@ -32,16 +24,7 @@ class ButtonAbout extends StatelessWidget {
                 onPressed: () => {},
               ),
             ),
-            Container(
-              child: Text(
-                'FlatButton',
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
-              ),
-              color: Colors.grey[200],
-              height: 30,
-              alignment: Alignment.centerLeft,
-              padding: EdgeInsets.only(left: 10),
-            ),
+            CommonTitle('FlatButton'),
             Container(
               padding:
                   EdgeInsets.only(left: 10, right: 10, top: 10, bottom: 10),
@@ -50,16 +33,7 @@ class ButtonAbout extends StatelessWidget {
                 onPressed: () => {},
               ),
             ),
-            Container(
-              child: Text(
-                'OutlineButton',
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
-              ),
-              color: Colors.grey[200],
-              height: 30,
-              alignment: Alignment.centerLeft,
-              padding: EdgeInsets.only(left: 10),
-            ),
+            CommonTitle('OutlineButton'),
             Container(
               padding:
                   EdgeInsets.only(left: 10, right: 10, top: 10, bottom: 10),
@@ -68,16 +42,7 @@ class ButtonAbout extends StatelessWidget {
                 onPressed: () => {},
               ),
             ),
-            Container(
-              child: Text(
-                'OutlineButton',
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
-              ),
-              color: Colors.grey[200],
-              height: 30,
-              alignment: Alignment.centerLeft,
-              padding: EdgeInsets.only(left: 10),
-            ),
+            CommonTitle('IconButton'),
             Container(
               padding:
                   EdgeInsets.only(left: 10, right: 10, top: 10, bottom: 10),
@@ -86,16 +51,7 @@ class ButtonAbout extends StatelessWidget {
                 onPressed: () => {},
               ),
             ),
-            Container(
-              child: Text(
-                '自定义按钮外观',
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
-              ),
-              color: Colors.grey[200],
-              height: 30,
-              alignment: Alignment.centerLeft,
-              padding: EdgeInsets.only(left: 10),
-            ),
+            CommonTitle('自定义按钮外观'),
             Container(
               padding:
                   EdgeInsets.only(left: 10, right: 10, top: 10, bottom: 10),

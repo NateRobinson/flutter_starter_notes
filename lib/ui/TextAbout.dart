@@ -1,5 +1,6 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_starter_notes/component/CommonTitle.dart';
 
 class TextAbout extends StatelessWidget {
   TextAbout({Key key, this.title}) : super(key: key);
@@ -16,39 +17,34 @@ class TextAbout extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
+            CommonTitle('Text 基础'),
             Container(
-              child: Text(
-                'Text 基础',
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
-              ),
-              color: Colors.grey[200],
-              height: 30,
-              alignment: Alignment.centerLeft,
-              padding: EdgeInsets.only(left: 10),
-            ),
-            Container(
-              padding: EdgeInsets.only(left: 10, right: 10, top: 10, bottom: 10),
+              padding:
+                  EdgeInsets.only(left: 10, right: 10, top: 10, bottom: 10),
               child: Text(
                 "左对齐" * 10,
                 textAlign: TextAlign.left,
               ),
             ),
             Container(
-              padding: EdgeInsets.only(left: 10, right: 10, top: 10, bottom: 10),
+              padding:
+                  EdgeInsets.only(left: 10, right: 10, top: 10, bottom: 10),
               child: Text(
                 "右对齐" * 10,
                 textAlign: TextAlign.right,
               ),
             ),
             Container(
-              padding: EdgeInsets.only(left: 10, right: 10, top: 10, bottom: 10),
+              padding:
+                  EdgeInsets.only(left: 10, right: 10, top: 10, bottom: 10),
               child: Text(
                 "居中对齐" * 10,
                 textAlign: TextAlign.center,
               ),
             ),
             Container(
-              padding: EdgeInsets.only(left: 10, right: 10, top: 10, bottom: 10),
+              padding:
+                  EdgeInsets.only(left: 10, right: 10, top: 10, bottom: 10),
               child: Text(
                 "单行文本，超出部分以省略号结尾。" * 4,
                 maxLines: 1,
@@ -57,24 +53,17 @@ class TextAbout extends StatelessWidget {
               ),
             ),
             Container(
-              padding: EdgeInsets.only(left: 10, right: 10, top: 10, bottom: 10),
+              padding:
+                  EdgeInsets.only(left: 10, right: 10, top: 10, bottom: 10),
               child: Text(
                 "我被放大了1.5倍",
                 textScaleFactor: 1.5,
               ),
             ),
+            CommonTitle('TextStyle'),
             Container(
-              child: Text(
-                'TextStyle',
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
-              ),
-              color: Colors.grey[200],
-              height: 30,
-              alignment: Alignment.centerLeft,
-              padding: EdgeInsets.only(left: 10),
-            ),
-            Container(
-              padding: EdgeInsets.only(left: 10, right: 10, top: 10, bottom: 10),
+              padding:
+                  EdgeInsets.only(left: 10, right: 10, top: 10, bottom: 10),
               child: Text(
                 "自定义 TextStyle 的文字",
                 style: TextStyle(
@@ -88,18 +77,10 @@ class TextAbout extends StatelessWidget {
                     decorationStyle: TextDecorationStyle.dashed),
               ),
             ),
+            CommonTitle('TextSpan: 富文本的 Text ，可点击超链接之类'),
             Container(
-              child: Text(
-                'TextSpan: 富文本的 Text ，可点击超链接之类',
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
-              ),
-              color: Colors.grey[200],
-              height: 30,
-              alignment: Alignment.centerLeft,
-              padding: EdgeInsets.only(left: 10),
-            ),
-            Container(
-              padding: EdgeInsets.only(left: 10, right: 10, top: 10, bottom: 10),
+              padding:
+                  EdgeInsets.only(left: 10, right: 10, top: 10, bottom: 10),
               child: Text.rich(TextSpan(children: [
                 TextSpan(text: "Home: "),
                 TextSpan(
@@ -112,18 +93,10 @@ class TextAbout extends StatelessWidget {
                 ),
               ])),
             ),
+            CommonTitle('DefaultTextStyle'),
             Container(
-              child: Text(
-                'DefaultTextStyle',
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
-              ),
-              color: Colors.grey[200],
-              height: 30,
-              alignment: Alignment.centerLeft,
-              padding: EdgeInsets.only(left: 10),
-            ),
-            Container(
-              padding: EdgeInsets.only(left: 10, right: 10, top: 10, bottom: 10),
+              padding:
+                  EdgeInsets.only(left: 10, right: 10, top: 10, bottom: 10),
               child: DefaultTextStyle(
                 //1.设置文本默认样式
                 style: TextStyle(
@@ -146,36 +119,20 @@ class TextAbout extends StatelessWidget {
                 ),
               ),
             ),
+            CommonTitle('自定义字体-from asset'),
             Container(
-              child: Text(
-                '自定义字体-from asset',
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
-              ),
-              color: Colors.grey[200],
-              height: 30,
-              alignment: Alignment.centerLeft,
-              padding: EdgeInsets.only(left: 10),
-            ),
-            Container(
-              padding: EdgeInsets.only(left: 10, right: 10, top: 10, bottom: 10),
+              padding:
+                  EdgeInsets.only(left: 10, right: 10, top: 10, bottom: 10),
               child: Text(
                 "Germania One Font",
                 style: TextStyle(fontFamily: 'RobotoCondensed', fontSize: 24),
                 textAlign: TextAlign.left,
               ),
             ),
+            CommonTitle('自定义字体-from package'),
             Container(
-              child: Text(
-                '自定义字体-from package',
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
-              ),
-              color: Colors.grey[200],
-              height: 30,
-              alignment: Alignment.centerLeft,
-              padding: EdgeInsets.only(left: 10),
-            ),
-            Container(
-              padding: EdgeInsets.only(left: 10, right: 10, top: 10, bottom: 10),
+              padding:
+                  EdgeInsets.only(left: 10, right: 10, top: 10, bottom: 10),
               child: Text(
                 "在 https://pub.dartlang.org 找了一圈没有找到合适的库来进行这个 Demo",
                 textAlign: TextAlign.left,

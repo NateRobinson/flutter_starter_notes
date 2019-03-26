@@ -5,14 +5,18 @@ class HomePage extends StatelessWidget {
   //  作为后面其他页面的入口
   List<String> strItems = <String>[
     'Text 相关',
-    '按钮 相关',
-    '图片及ICON 相关',
+    '按钮相关',
+    '图片及 ICON 相关',
+    '单选开关和复选框相关',
+    '输入框及表单相关',
   ];
 
   List<String> routers = <String>[
     '/textabout',
     '/buttonabout',
     '/imageandiconabout',
+    '/switchandcheckboxabout',
+    '/inputandformabout',
   ];
 
   Widget buildItem(BuildContext context, String strItem, String router) {

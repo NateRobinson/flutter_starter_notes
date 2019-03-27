@@ -13,7 +13,7 @@ class CommonTitle extends StatelessWidget {
         style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
       ),
       color: Colors.grey[200],
-      height: 30,
+      height: 40,
       alignment: Alignment.centerLeft,
       padding: EdgeInsets.only(left: 10),
     );

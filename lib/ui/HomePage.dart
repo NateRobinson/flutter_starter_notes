@@ -9,6 +9,7 @@ class HomePage extends StatelessWidget {
     '图片及 ICON 相关',
     '单选开关和复选框相关',
     '输入框及表单相关',
+    'Row 和 Colunm 相关',
   ];
 
   List<String> routers = <String>[
@@ -17,6 +18,7 @@ class HomePage extends StatelessWidget {
     '/imageandiconabout',
     '/switchandcheckboxabout',
     '/inputandformabout',
+    '/rowandcolumnabout',
   ];
 
   Widget buildItem(BuildContext context, String strItem, String router) {

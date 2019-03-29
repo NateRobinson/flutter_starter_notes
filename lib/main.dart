@@ -6,6 +6,7 @@ import 'package:flutter_starter_notes/ui/TextAbout.dart';
 import 'package:flutter_starter_notes/ui/ImageAndIconAbout.dart';
 import 'package:flutter_starter_notes/ui/SwitchAndCheckBoxAbout.dart';
 import 'package:flutter_starter_notes/ui/InputAndFormAbout.dart';
+import 'package:flutter_starter_notes/ui/RowAndColumnAbout.dart';
 
 void main() {
   debugPaintSizeEnabled = false; //打开视觉调试开关
@@ -37,6 +38,9 @@ class MyApp extends StatelessWidget {
             ),
         '/inputandformabout': (context) => InputAndFormAbout(
               title: "单选开关和复选框相关",
+            ),
+        '/rowandcolumnabout': (context) => RowAndColumnAbout(
+              title: "Row 和 Colunm 相关",
             ),
       },
     );

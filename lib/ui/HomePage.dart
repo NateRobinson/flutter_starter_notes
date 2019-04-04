@@ -1,35 +1,99 @@
 import 'package:flutter/material.dart';
 
-class HomePage extends StatelessWidget {
-  // 【Note:】这边使用了 ListView.builder 的方式创建了一个菜单列表
-  //  作为后面其他页面的入口
-  List<String> strItems = <String>[
-    'Text 相关',
-    '按钮相关',
-    '图片及 ICON 相关',
-    '单选开关和复选框相关',
-    '输入框及表单相关',
-    'Row 和 Colunm 相关',
+class HomePage extends StatefulWidget {
+  @override
+  State<StatefulWidget> createState() {
+    return HomePageState();
+  }
+}
+
+class HomePageState extends State<HomePage> {
+  static List<HomeMenuChildItem> basicWidgetsItems = <HomeMenuChildItem>[
+    HomeMenuChildItem("Text 相关", "/textabout"),
+    HomeMenuChildItem("按钮相关", "/buttonabout"),
+    HomeMenuChildItem("图片及 ICON 相关", "/imageandiconabout"),
+    HomeMenuChildItem("单选开关和复选框相关", "/switchandcheckboxabout"),
+    HomeMenuChildItem("输入框及表单相关", "/inputandformabout"),
   ];
 
-  List<String> routers = <String>[
-    '/textabout',
-    '/buttonabout',
-    '/imageandiconabout',
-    '/switchandcheckboxabout',
-    '/inputandformabout',
-    '/rowandcolumnabout',
+  static List<HomeMenuChildItem> layoutWidgetsItems = <HomeMenuChildItem>[
+    HomeMenuChildItem("Row 和 Colunm 相关", "/rowandcolumnabout"),
   ];
 
-  Widget buildItem(BuildContext context, String strItem, String router) {
-    return new ListTile(
-      isThreeLine: false,
-      title: new Text(strItem),
-      trailing: new Icon(Icons.keyboard_arrow_right),
-      onTap: () {
-        Navigator.pushNamed(context, router);
-      },
+  final List<HomeMenuItem> _menus = <HomeMenuItem>[
+    HomeMenuItem(false, "基础 Widgets", basicWidgetsItems),
+    HomeMenuItem(false, "布局类 Widgets", layoutWidgetsItems),
+  ];
+
+  void onTitleClick(num index) {
+    setState(() {
+      _menus[index].isOpen = !_menus[index].isOpen;
+    });
+  }
+
+  Widget buildContent() {
+    List<Widget> items = [];
+    for (var i = 0; i < _menus.length; i++) {
+      HomeMenuItem item = _menus[i];
+      items.add(GestureDetector(
+        child: Container(
+          child: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Row(
+              children: <Widget>[
+                Expanded(child: Text(item.title)),
+                Icon(item.isOpen
+                    ? Icons.keyboard_arrow_up
+                    : Icons.keyboard_arrow_down)
+              ],
+            ),
+          ),
+          color: Colors.grey[200],
+          height: 60,
+          alignment: Alignment.centerLeft,
+          padding: EdgeInsets.only(left: 10),
+        ),
+        onTap: () => {this.onTitleClick(i)},
+      ));
+      if (item.isOpen) {
+        for (var childItem in item.items) {
+          items.add(GestureDetector(
+            onTap: () => {Navigator.pushNamed(context, childItem.router)},
+            child: Container(
+              height: 60,
+              padding: EdgeInsets.only(left: 10),
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Row(
+                  children: <Widget>[
+                    Expanded(
+                      child: Text(childItem.name),
+                      flex: 1,
+                    ),
+                    new Icon(Icons.keyboard_arrow_right)
+                  ],
+                ),
+              ),
+            ),
+          ));
+          items.add(Divider(
+            height: 1,
+            color: Colors.grey[400],
+          ));
+        }
+      } else {
+        items.add(Divider(
+          height: 1,
+          color: Colors.grey[400],
+        ));
+      }
+    }
+
+    Widget content = new Column(
+      children: items,
     );
+
+    return content;
   }
 
   @override
@@ -38,22 +102,31 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         title: Text('Flutter Starter Notes App'),
       ),
-      body: ListView.builder(
-          itemCount: strItems.length,
-          itemBuilder: (context, item) {
-            return new Container(
-              child: Column(
-                children: <Widget>[
-                  buildItem(context, strItems[item], routers[item]),
-                  // 【Note:】通过设置 height 可以改变 Divider 的高度，默认是 16，会使
-                  //  点击的效果看起来和线之间有一个间距，所以这里设置成了 1
-                  Divider(
-                    height: 1,
-                  )
-                ],
-              ),
-            );
-          }),
+      body: SingleChildScrollView(
+        child: buildContent(),
+      ),
     );
+  }
+}
+
+class HomeMenuItem {
+  bool isOpen; // 0 - title 1 - normal item
+  String title;
+  List<HomeMenuChildItem> items;
+
+  HomeMenuItem(bool isOpen, String title, List<HomeMenuChildItem> items) {
+    this.isOpen = isOpen;
+    this.title = title;
+    this.items = items;
+  }
+}
+
+class HomeMenuChildItem {
+  String name;
+  String router;
+
+  HomeMenuChildItem(String name, String router) {
+    this.name = name;
+    this.router = router;
   }
 }

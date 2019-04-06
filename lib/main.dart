@@ -39,7 +39,7 @@ class MyApp extends StatelessWidget {
               title: "单选开关和复选框相关",
             ),
         '/inputandformabout': (context) => InputAndFormAbout(
-              title: "单选开关和复选框相关",
+              title: "输入框及表单相关",
             ),
         '/rowandcolumnabout': (context) => RowAndColumnAbout(
               title: "Row 和 Colunm 相关",

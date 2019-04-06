@@ -8,6 +8,7 @@ import 'package:flutter_starter_notes/ui/SwitchAndCheckBoxAbout.dart';
 import 'package:flutter_starter_notes/ui/InputAndFormAbout.dart';
 import 'package:flutter_starter_notes/ui/RowAndColumnAbout.dart';
 import 'package:flutter_starter_notes/ui/FlexAbout.dart';
+import 'package:flutter_starter_notes/ui/WrapAndFlowAbout.dart';
 
 void main() {
   debugPaintSizeEnabled = false; //打开视觉调试开关
@@ -45,6 +46,9 @@ class MyApp extends StatelessWidget {
             ),
         '/flexabout': (context) => FlexAbout(
               title: "弹性布局相关",
+            ),
+        '/wrapandflowabout': (context) => WrapAndFlowAbout(
+              title: "流式布局相关",
             ),
       },
     );

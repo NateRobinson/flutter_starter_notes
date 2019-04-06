@@ -29,7 +29,7 @@ class RowAndColumnAbout extends StatelessWidget {
                 Container(child: Text("Item 2"), color: Colors.red),
               ],
             ),
-            CommonTitle('Row - 主轴对齐方式：start，主轴大小：min'),
+            CommonTitle('Row - 主轴对齐方式：center，主轴大小：min'),
             Row(
               mainAxisSize: MainAxisSize.min,
               mainAxisAlignment: MainAxisAlignment.center,

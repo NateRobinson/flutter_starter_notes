@@ -19,6 +19,7 @@ class HomePageState extends State<HomePage> {
   static List<HomeMenuChildItem> layoutWidgetsItems = <HomeMenuChildItem>[
     HomeMenuChildItem("Row 和 Colunm 相关", "/rowandcolumnabout"),
     HomeMenuChildItem("弹性布局相关", "/flexabout"),
+    HomeMenuChildItem("流式布局相关", "/wrapandflowabout"),
   ];
 
   final List<HomeMenuItem> _menus = <HomeMenuItem>[

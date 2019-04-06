@@ -7,6 +7,7 @@ import 'package:flutter_starter_notes/ui/ImageAndIconAbout.dart';
 import 'package:flutter_starter_notes/ui/SwitchAndCheckBoxAbout.dart';
 import 'package:flutter_starter_notes/ui/InputAndFormAbout.dart';
 import 'package:flutter_starter_notes/ui/RowAndColumnAbout.dart';
+import 'package:flutter_starter_notes/ui/FlexAbout.dart';
 
 void main() {
   debugPaintSizeEnabled = false; //打开视觉调试开关
@@ -41,6 +42,9 @@ class MyApp extends StatelessWidget {
             ),
         '/rowandcolumnabout': (context) => RowAndColumnAbout(
               title: "Row 和 Colunm 相关",
+            ),
+        '/flexabout': (context) => FlexAbout(
+              title: "弹性布局相关",
             ),
       },
     );

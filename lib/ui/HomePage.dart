@@ -35,7 +35,7 @@ class HomePageState extends State<HomePage> {
     List<Widget> items = [];
     for (var i = 0; i < _menus.length; i++) {
       HomeMenuItem item = _menus[i];
-      items.add(GestureDetector(
+      items.add(InkWell(
         child: Container(
           child: Padding(
             padding: const EdgeInsets.all(8.0),
@@ -57,7 +57,7 @@ class HomePageState extends State<HomePage> {
       ));
       if (item.isOpen) {
         for (var childItem in item.items) {
-          items.add(GestureDetector(
+          items.add(InkWell(
             onTap: () => {Navigator.pushNamed(context, childItem.router)},
             child: Container(
               height: 60,

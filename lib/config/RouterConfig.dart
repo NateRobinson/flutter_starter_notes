@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_starter_notes/ui/BoxAbout.dart';
 import 'package:flutter_starter_notes/ui/ButtonAbout.dart';
+import 'package:flutter_starter_notes/ui/DecoratedBoxAbout.dart';
 import 'package:flutter_starter_notes/ui/FlexAbout.dart';
 import 'package:flutter_starter_notes/ui/HomePage.dart';
 import 'package:flutter_starter_notes/ui/ImageAndIconAbout.dart';
@@ -112,6 +113,14 @@ class RouterConfig {
       "container",
       (context) => BoxAbout(
             title: "布局限制类容器 ConstrainedBox, SizeBox",
+          ),
+    ),
+    RouterBean(
+      "/decoratedboxabout",
+      "装饰容器 DecoratedBox",
+      "container",
+      (context) => DecoratedBoxAbout(
+            title: "装饰容器 DecoratedBox",
           ),
     ),
   ];

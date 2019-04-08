@@ -9,30 +9,7 @@ class HomePage extends StatefulWidget {
 }
 
 class HomePageState extends State<HomePage> {
-  static List<HomeMenuChildItem> basicWidgetsItems = <HomeMenuChildItem>[
-    HomeMenuChildItem("/textabout"),
-    HomeMenuChildItem("/buttonabout"),
-    HomeMenuChildItem("/imageandiconabout"),
-    HomeMenuChildItem("/switchandcheckboxabout"),
-    HomeMenuChildItem("/inputandformabout"),
-  ];
-
-  static List<HomeMenuChildItem> layoutWidgetsItems = <HomeMenuChildItem>[
-    HomeMenuChildItem("/rowandcolumnabout"),
-    HomeMenuChildItem("/flexabout"),
-    HomeMenuChildItem("/wrapandflowabout"),
-    HomeMenuChildItem("/stackandpositionedabout"),
-  ];
-
-  static List<HomeMenuChildItem> containerWidgetsItems = <HomeMenuChildItem>[
-    HomeMenuChildItem("/paddingabout"),
-  ];
-
-  final List<HomeMenuItem> _menus = <HomeMenuItem>[
-    HomeMenuItem(false, "基础 Widgets", basicWidgetsItems),
-    HomeMenuItem(false, "布局类 Widgets", layoutWidgetsItems),
-    HomeMenuItem(false, "容器类 Widgets", containerWidgetsItems),
-  ];
+  final List<HomeMenuItem> _menus = RouterConfig.genMenus();
 
   void onTitleClick(num index) {
     setState(() {
@@ -115,27 +92,5 @@ class HomePageState extends State<HomePage> {
         child: buildContent(),
       ),
     );
-  }
-}
-
-class HomeMenuItem {
-  bool isOpen; // 0 - title 1 - normal item
-  String title;
-  List<HomeMenuChildItem> items;
-
-  HomeMenuItem(bool isOpen, String title, List<HomeMenuChildItem> items) {
-    this.isOpen = isOpen;
-    this.title = title;
-    this.items = items;
-  }
-}
-
-class HomeMenuChildItem {
-  String name;
-  String router;
-
-  HomeMenuChildItem(String router) {
-    this.name = RouterConfig.namesForRouter[router];
-    this.router = router;
   }
 }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_starter_notes/config/RouterConfig.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -9,23 +10,28 @@ class HomePage extends StatefulWidget {
 
 class HomePageState extends State<HomePage> {
   static List<HomeMenuChildItem> basicWidgetsItems = <HomeMenuChildItem>[
-    HomeMenuChildItem("Text 相关", "/textabout"),
-    HomeMenuChildItem("按钮相关", "/buttonabout"),
-    HomeMenuChildItem("图片及 ICON 相关", "/imageandiconabout"),
-    HomeMenuChildItem("单选开关和复选框相关", "/switchandcheckboxabout"),
-    HomeMenuChildItem("输入框及表单相关", "/inputandformabout"),
+    HomeMenuChildItem("/textabout"),
+    HomeMenuChildItem("/buttonabout"),
+    HomeMenuChildItem("/imageandiconabout"),
+    HomeMenuChildItem("/switchandcheckboxabout"),
+    HomeMenuChildItem("/inputandformabout"),
   ];
 
   static List<HomeMenuChildItem> layoutWidgetsItems = <HomeMenuChildItem>[
-    HomeMenuChildItem("Row 和 Colunm 相关", "/rowandcolumnabout"),
-    HomeMenuChildItem("弹性布局相关", "/flexabout"),
-    HomeMenuChildItem("流式布局相关", "/wrapandflowabout"),
-    HomeMenuChildItem("层叠布局 (Stack, Positioned) 相关", "/stackandpositionedabout"),
+    HomeMenuChildItem("/rowandcolumnabout"),
+    HomeMenuChildItem("/flexabout"),
+    HomeMenuChildItem("/wrapandflowabout"),
+    HomeMenuChildItem("/stackandpositionedabout"),
+  ];
+
+  static List<HomeMenuChildItem> containerWidgetsItems = <HomeMenuChildItem>[
+    HomeMenuChildItem("/paddingabout"),
   ];
 
   final List<HomeMenuItem> _menus = <HomeMenuItem>[
     HomeMenuItem(false, "基础 Widgets", basicWidgetsItems),
     HomeMenuItem(false, "布局类 Widgets", layoutWidgetsItems),
+    HomeMenuItem(false, "容器类 Widgets", containerWidgetsItems),
   ];
 
   void onTitleClick(num index) {
@@ -128,8 +134,8 @@ class HomeMenuChildItem {
   String name;
   String router;
 
-  HomeMenuChildItem(String name, String router) {
-    this.name = name;
+  HomeMenuChildItem(String router) {
+    this.name = RouterConfig.namesForRouter[router];
     this.router = router;
   }
 }

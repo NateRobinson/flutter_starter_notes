@@ -20,6 +20,7 @@ class HomePageState extends State<HomePage> {
     HomeMenuChildItem("Row 和 Colunm 相关", "/rowandcolumnabout"),
     HomeMenuChildItem("弹性布局相关", "/flexabout"),
     HomeMenuChildItem("流式布局相关", "/wrapandflowabout"),
+    HomeMenuChildItem("层叠布局 (Stack, Positioned) 相关", "/stackandpositionedabout"),
   ];
 
   final List<HomeMenuItem> _menus = <HomeMenuItem>[

@@ -65,3 +65,9 @@ Learn this project together with the open source book will much be better.
 [SouceCode: WrapAndFlowAbout.dart](./lib/ui/WrapAndFlowAbout.dart)
 
 [BookLink: 流式布局](https://book.flutterchina.club/chapter4/wrap_and_flow.html)
+
+#### 2.4. 层叠布局 (Stack, Positioned) 相关
+
+[SouceCode: StackAndPositionedAbout.dart](./lib/ui/StackAndPositionedAbout.dart)
+
+[BookLink: 流式布局](https://book.flutterchina.club/chapter4/stack.html)

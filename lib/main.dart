@@ -9,6 +9,7 @@ import 'package:flutter_starter_notes/ui/InputAndFormAbout.dart';
 import 'package:flutter_starter_notes/ui/RowAndColumnAbout.dart';
 import 'package:flutter_starter_notes/ui/FlexAbout.dart';
 import 'package:flutter_starter_notes/ui/WrapAndFlowAbout.dart';
+import 'package:flutter_starter_notes/ui/StackAndPositionedAbout.dart';
 
 void main() {
   debugPaintSizeEnabled = false; //打开视觉调试开关
@@ -49,6 +50,9 @@ class MyApp extends StatelessWidget {
             ),
         '/wrapandflowabout': (context) => WrapAndFlowAbout(
               title: "流式布局相关",
+            ),
+        '/stackandpositionedabout': (context) => StackAndPositionedAbout(
+              title: "层叠布局 (Stack, Positioned) 相关",
             ),
       },
     );

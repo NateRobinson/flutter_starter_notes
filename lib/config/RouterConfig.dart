@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_starter_notes/ui/BoxAbout.dart';
 import 'package:flutter_starter_notes/ui/ButtonAbout.dart';
 import 'package:flutter_starter_notes/ui/FlexAbout.dart';
 import 'package:flutter_starter_notes/ui/HomePage.dart';
@@ -105,6 +106,14 @@ class RouterConfig {
             title: "Padding",
           ),
     ),
+    RouterBean(
+      "/boxabout",
+      "布局限制类容器 ConstrainedBox, SizeBox",
+      "container",
+      (context) => BoxAbout(
+            title: "布局限制类容器 ConstrainedBox, SizeBox",
+          ),
+    ),
   ];
 
   static Map<String, WidgetBuilder> genRouters() {
@@ -119,7 +128,8 @@ class RouterConfig {
     for (var value in keys.keys) {
       List<HomeMenuChildItem> widgetsItems = allRoutes
           .where((item) => item.typeKey == value)
-          .map((item) => HomeMenuChildItem(item.name, item.router)).toList();
+          .map((item) => HomeMenuChildItem(item.name, item.router))
+          .toList();
       menus.add(HomeMenuItem(false, keys[value], widgetsItems));
     }
 

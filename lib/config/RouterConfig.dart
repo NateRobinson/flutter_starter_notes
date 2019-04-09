@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_starter_notes/ui/BoxAbout.dart';
 import 'package:flutter_starter_notes/ui/ButtonAbout.dart';
+import 'package:flutter_starter_notes/ui/ContainerAbout.dart';
 import 'package:flutter_starter_notes/ui/DecoratedBoxAbout.dart';
 import 'package:flutter_starter_notes/ui/FlexAbout.dart';
 import 'package:flutter_starter_notes/ui/HomePage.dart';
@@ -130,6 +131,14 @@ class RouterConfig {
       "container",
       (context) => TransformAbout(
             title: "变换 Transform",
+          ),
+    ),
+    RouterBean(
+      "/containerabout",
+      "Container 容器",
+      "container",
+      (context) => ContainerAbout(
+            title: "Container 容器",
           ),
     ),
   ];

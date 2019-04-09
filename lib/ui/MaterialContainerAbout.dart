@@ -23,7 +23,7 @@ class ScaffoldRoute extends StatefulWidget {
 
 class _ScaffoldRouteState extends State<ScaffoldRoute>
     with SingleTickerProviderStateMixin {
-  //int _selectedIndex = 1;
+  int _selectedIndex = 1;
 
   TabController _tabController; //需要定义一个Controller
   List tabs = ["新闻", "历史", "图片"];
@@ -67,31 +67,32 @@ class _ScaffoldRouteState extends State<ScaffoldRoute>
       ),
       drawer: new MyDrawer(),
       //抽屉
-//      bottomNavigationBar: BottomNavigationBar(
-//        // 底部导航
-//        items: <BottomNavigationBarItem>[
-//          BottomNavigationBarItem(icon: Icon(Icons.home), title: Text('Home')),
-//          BottomNavigationBarItem(
-//              icon: Icon(Icons.business), title: Text('Business')),
-//          BottomNavigationBarItem(
-//              icon: Icon(Icons.school), title: Text('School')),
-//        ],
-//        currentIndex: _selectedIndex,
-//        fixedColor: Colors.blue,
-//        onTap: _onItemTapped,
-//      ),
-      bottomNavigationBar: BottomAppBar(
-        color: Colors.white,
-        shape: CircularNotchedRectangle(),
-        child: Row(
-          children: [
-            IconButton(icon: Icon(Icons.home)), SizedBox(), //中间位置空出
-            IconButton(icon: Icon(Icons.business)),
-          ],
-          mainAxisAlignment: MainAxisAlignment.spaceAround, //均分底部导航栏横向空间
-        ),
+      bottomNavigationBar: BottomNavigationBar(
+        // 底部导航
+        items: <BottomNavigationBarItem>[
+          BottomNavigationBarItem(icon: Icon(Icons.home), title: Text('Home')),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.business), title: Text('Business')),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.school), title: Text('School')),
+        ],
+        currentIndex: _selectedIndex,
+        fixedColor: Colors.blue,
+        onTap: _onItemTapped,
       ),
-      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+//下面的代码可以运行，但是编译器会报红，很奇怪，希望知道的朋友给予解答
+//      bottomNavigationBar: BottomAppBar(
+//        color: Colors.white,
+//        shape: CircularNotchedRectangle(),
+//        child: Row(
+//          children: [
+//            IconButton(icon: Icon(Icons.home)), SizedBox(), //中间位置空出
+//            IconButton(icon: Icon(Icons.business)),
+//          ],
+//          mainAxisAlignment: MainAxisAlignment.spaceAround, //均分底部导航栏横向空间
+//        ),
+//      ),
+//    floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       floatingActionButton: FloatingActionButton(
           //悬浮按钮
           child: Icon(Icons.add),
@@ -109,11 +110,11 @@ class _ScaffoldRouteState extends State<ScaffoldRoute>
     );
   }
 
-//  void _onItemTapped(int index) {
-//    setState(() {
-//      _selectedIndex = index;
-//    });
-//  }
+  void _onItemTapped(int index) {
+    setState(() {
+      _selectedIndex = index;
+    });
+  }
 
   void _onAdd() {}
 }

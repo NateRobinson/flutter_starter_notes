@@ -11,6 +11,7 @@ import 'package:flutter_starter_notes/ui/RowAndColumnAbout.dart';
 import 'package:flutter_starter_notes/ui/StackAndPositionedAbout.dart';
 import 'package:flutter_starter_notes/ui/SwitchAndCheckBoxAbout.dart';
 import 'package:flutter_starter_notes/ui/TextAbout.dart';
+import 'package:flutter_starter_notes/ui/TransformAbout.dart';
 import 'package:flutter_starter_notes/ui/WrapAndFlowAbout.dart';
 
 class RouterConfig {
@@ -121,6 +122,14 @@ class RouterConfig {
       "container",
       (context) => DecoratedBoxAbout(
             title: "装饰容器 DecoratedBox",
+          ),
+    ),
+    RouterBean(
+      "/transformabout",
+      "变换 Transform",
+      "container",
+      (context) => TransformAbout(
+            title: "变换 Transform",
           ),
     ),
   ];

@@ -20,7 +20,7 @@ class DecoratedBoxAbout extends StatelessWidget {
               alignment: Alignment.centerLeft,
               padding: EdgeInsets.all(16),
               child: Text(
-                  "DecoratedBox 可以在其子 widget 绘制前(或后)绘制一个装饰 Decoration（如背景、边框、渐变等）。"),
+                  "DecoratedBox 可以在其子 widget 绘制前(或后)绘制一个装饰 Decoration（如背景、边框、渐变、阴影等）。"),
             ),
             CommonTitle('DecoratedBox 示例'),
             Padding(

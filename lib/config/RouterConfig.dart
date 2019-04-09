@@ -7,6 +7,7 @@ import 'package:flutter_starter_notes/ui/FlexAbout.dart';
 import 'package:flutter_starter_notes/ui/HomePage.dart';
 import 'package:flutter_starter_notes/ui/ImageAndIconAbout.dart';
 import 'package:flutter_starter_notes/ui/InputAndFormAbout.dart';
+import 'package:flutter_starter_notes/ui/MaterialContainerAbout.dart';
 import 'package:flutter_starter_notes/ui/PaddingAbout.dart';
 import 'package:flutter_starter_notes/ui/RowAndColumnAbout.dart';
 import 'package:flutter_starter_notes/ui/StackAndPositionedAbout.dart';
@@ -139,6 +140,14 @@ class RouterConfig {
       "container",
       (context) => ContainerAbout(
             title: "Container 容器",
+          ),
+    ),
+    RouterBean(
+      "/materialcontainerabout",
+      "Scaffold、TabBar、底部导航",
+      "container",
+      (context) => MaterialContainerAbout(
+            title: "Scaffold、TabBar、底部导航",
           ),
     ),
   ];

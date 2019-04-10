@@ -10,6 +10,7 @@ import 'package:flutter_starter_notes/ui/InputAndFormAbout.dart';
 import 'package:flutter_starter_notes/ui/MaterialContainerAbout.dart';
 import 'package:flutter_starter_notes/ui/PaddingAbout.dart';
 import 'package:flutter_starter_notes/ui/RowAndColumnAbout.dart';
+import 'package:flutter_starter_notes/ui/SingleChildScrollAbout.dart';
 import 'package:flutter_starter_notes/ui/StackAndPositionedAbout.dart';
 import 'package:flutter_starter_notes/ui/SwitchAndCheckBoxAbout.dart';
 import 'package:flutter_starter_notes/ui/TextAbout.dart';
@@ -21,6 +22,7 @@ class RouterConfig {
     "basic": "基础 Widgets",
     "layout": "布局类 Widgets",
     "container": "容器类 Widgets",
+    "scroll": "可滚动 Widgets",
   };
 
   static List<RouterBean> allRoutes = [
@@ -148,6 +150,14 @@ class RouterConfig {
       "container",
       (context) => MaterialContainerAbout(
             title: "Scaffold、TabBar、底部导航",
+          ),
+    ),
+    RouterBean(
+      "/singlechildscrollview",
+      "SingleChildScrollView",
+      "scroll",
+      (context) => SingleChildScrollAbout(
+            title: "SingleChildScrollView",
           ),
     ),
   ];

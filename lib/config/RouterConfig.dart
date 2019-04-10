@@ -4,6 +4,7 @@ import 'package:flutter_starter_notes/ui/ButtonAbout.dart';
 import 'package:flutter_starter_notes/ui/ContainerAbout.dart';
 import 'package:flutter_starter_notes/ui/DecoratedBoxAbout.dart';
 import 'package:flutter_starter_notes/ui/FlexAbout.dart';
+import 'package:flutter_starter_notes/ui/GridViewAbout.dart';
 import 'package:flutter_starter_notes/ui/HomePage.dart';
 import 'package:flutter_starter_notes/ui/ImageAndIconAbout.dart';
 import 'package:flutter_starter_notes/ui/InputAndFormAbout.dart';
@@ -167,6 +168,14 @@ class RouterConfig {
       "scroll",
       (context) => ListViewAbout(
             title: "ListView",
+          ),
+    ),
+    RouterBean(
+      "/gridviewabout",
+      "GridView",
+      "scroll",
+      (context) => GridViewAbout(
+            title: "GridView",
           ),
     ),
   ];

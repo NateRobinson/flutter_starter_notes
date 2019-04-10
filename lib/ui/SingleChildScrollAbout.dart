@@ -5,7 +5,7 @@ class SingleChildScrollAbout extends StatelessWidget {
   SingleChildScrollAbout({Key key, this.title});
 
   final String title;
-  String str = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  final String str = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +17,7 @@ class SingleChildScrollAbout extends StatelessWidget {
         child: SingleChildScrollView(
           child: Column(
             children: <Widget>[
-              CommonTitle('Switch 和 Checkbox 示例'),
+              CommonTitle('SingleChildScrollAbout 介绍与示例'),
               Container(
                 padding: EdgeInsets.all(16),
                 child: Text(

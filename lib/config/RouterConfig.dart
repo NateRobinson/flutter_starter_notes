@@ -19,6 +19,7 @@ import 'package:flutter_starter_notes/ui/SingleChildScrollAbout.dart';
 import 'package:flutter_starter_notes/ui/StackAndPositionedAbout.dart';
 import 'package:flutter_starter_notes/ui/SwitchAndCheckBoxAbout.dart';
 import 'package:flutter_starter_notes/ui/TextAbout.dart';
+import 'package:flutter_starter_notes/ui/ThemeAbout.dart';
 import 'package:flutter_starter_notes/ui/TransformAbout.dart';
 import 'package:flutter_starter_notes/ui/WillPopScopeAbout.dart';
 import 'package:flutter_starter_notes/ui/WrapAndFlowAbout.dart';
@@ -213,6 +214,14 @@ class RouterConfig {
       "function",
       (context) => InheritedWidgetAbout(
             title: "数据共享-InheritedWidget",
+          ),
+    ),
+    RouterBean(
+      "/themeabout",
+      "主题-Theme",
+      "function",
+      (context) => ThemeAbout(
+            title: "主题-Theme",
           ),
     ),
   ];

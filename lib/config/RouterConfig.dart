@@ -8,6 +8,7 @@ import 'package:flutter_starter_notes/ui/FlexAbout.dart';
 import 'package:flutter_starter_notes/ui/GridViewAbout.dart';
 import 'package:flutter_starter_notes/ui/HomePage.dart';
 import 'package:flutter_starter_notes/ui/ImageAndIconAbout.dart';
+import 'package:flutter_starter_notes/ui/InheritedWidgetAbout.dart';
 import 'package:flutter_starter_notes/ui/InputAndFormAbout.dart';
 import 'package:flutter_starter_notes/ui/ListViewAbout.dart';
 import 'package:flutter_starter_notes/ui/MaterialContainerAbout.dart';
@@ -204,6 +205,14 @@ class RouterConfig {
       "function",
       (context) => WillPopScopeAbout(
             title: "导航返回拦截-WillPopScope",
+          ),
+    ),
+    RouterBean(
+      "/inheritedwidgetabout",
+      "数据共享-InheritedWidget",
+      "function",
+      (context) => InheritedWidgetAbout(
+            title: "数据共享-InheritedWidget",
           ),
     ),
   ];

@@ -13,6 +13,7 @@ import 'package:flutter_starter_notes/ui/ListViewAbout.dart';
 import 'package:flutter_starter_notes/ui/MaterialContainerAbout.dart';
 import 'package:flutter_starter_notes/ui/PaddingAbout.dart';
 import 'package:flutter_starter_notes/ui/RowAndColumnAbout.dart';
+import 'package:flutter_starter_notes/ui/ScrollControllerAbout.dart';
 import 'package:flutter_starter_notes/ui/SingleChildScrollAbout.dart';
 import 'package:flutter_starter_notes/ui/StackAndPositionedAbout.dart';
 import 'package:flutter_starter_notes/ui/SwitchAndCheckBoxAbout.dart';
@@ -185,6 +186,14 @@ class RouterConfig {
       "scroll",
       (context) => CustomScrollViewAbout(
             title: "CustomScrollView",
+          ),
+    ),
+    RouterBean(
+      "/scrollcontrollerabout",
+      "滚动监听及控制ScrollController",
+      "scroll",
+      (context) => ScrollControllerAbout(
+            title: "滚动监听及控制ScrollController",
           ),
     ),
   ];

@@ -1,22 +1,28 @@
-# Flutter Starter Notes
+# Flutter 新手实践笔记
+[<img src="./noteimgs/flutter-starter-notes.png">](https://github.com/NateRobinson/flutter_starter_notes)
 
-🤹‍ ️Wow!!! A flutter starter notes project for beginner
+<p align="center">
+  <img alt="awesome" src="https://img.shields.io/badge/awesome-flutter%20starter%20notes-orange.svg" />
+</p>
 
-## Screenshot
+# 关于
 
-<img src="./noteimgs/screen_shot_1.png" width = "300"  align="center"/>
+🤹‍ ️Wow!!! 这是一个用来给 Flutter 新手进行实践，对比的学习项目。
 
-## How to use this note project
 
-This project is accord to the open source book: [https://github.com/flutterchina/flutter-in-action](https://github.com/flutterchina/flutter-in-action)
+# 如何使用
 
-Learn this project together with the open source book will much be better.
+本项目的结构和开源电子书 [https://github.com/flutterchina/flutter-in-action](https://github.com/flutterchina/flutter-in-action) 目录保持一致，学习的时候可以一遍学习书籍知识，一遍参考此项目的实践代码。
 
-## Project Directory
+# 目录
 
-### 1. 基础 Widgets
+- [基础 Widgets](#1. 基础 Widgets)
+    - [1.1. Text 相关](#1.1. Text 相关)
 
-#### 1.1. Text 相关
+
+## 1. 基础 Widgets
+
+### 1.1. Text 相关
 
 [SouceCode: TextAbout.dart](./lib/ui/TextAbout.dart)
 

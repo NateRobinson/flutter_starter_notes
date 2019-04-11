@@ -78,6 +78,7 @@ class _InfiniteListViewState extends State<InfiniteListView> {
           _words.length - 1,
           //每次生成20个单词
           generateWordPairs().take(20).map((e) => e.asPascalCase).toList());
+      if (!mounted) return;
       setState(() {
         //重新构建列表
       });

@@ -13,6 +13,7 @@ import 'package:flutter_starter_notes/ui/InputAndFormAbout.dart';
 import 'package:flutter_starter_notes/ui/ListViewAbout.dart';
 import 'package:flutter_starter_notes/ui/MaterialContainerAbout.dart';
 import 'package:flutter_starter_notes/ui/PaddingAbout.dart';
+import 'package:flutter_starter_notes/ui/PointerEventAbout.dart';
 import 'package:flutter_starter_notes/ui/RowAndColumnAbout.dart';
 import 'package:flutter_starter_notes/ui/ScrollControllerAbout.dart';
 import 'package:flutter_starter_notes/ui/SingleChildScrollAbout.dart';
@@ -31,6 +32,7 @@ class RouterConfig {
     "container": "容器类 Widgets",
     "scroll": "可滚动 Widgets",
     "function": "功能型 Widgets",
+    "eventAndNotification": "事件处理与通知",
   };
 
   static List<RouterBean> allRoutes = [
@@ -222,6 +224,14 @@ class RouterConfig {
       "function",
       (context) => ThemeAbout(
             title: "主题-Theme",
+          ),
+    ),
+    RouterBean(
+      "/pointereventabout",
+      "原始指针事件处理",
+      "eventAndNotification",
+      (context) => PointerEventAbout(
+            title: "原始指针事件处理",
           ),
     ),
   ];

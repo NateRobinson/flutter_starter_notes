@@ -19,6 +19,7 @@ import 'package:flutter_starter_notes/ui/StackAndPositionedAbout.dart';
 import 'package:flutter_starter_notes/ui/SwitchAndCheckBoxAbout.dart';
 import 'package:flutter_starter_notes/ui/TextAbout.dart';
 import 'package:flutter_starter_notes/ui/TransformAbout.dart';
+import 'package:flutter_starter_notes/ui/WillPopScopeAbout.dart';
 import 'package:flutter_starter_notes/ui/WrapAndFlowAbout.dart';
 
 class RouterConfig {
@@ -27,6 +28,7 @@ class RouterConfig {
     "layout": "布局类 Widgets",
     "container": "容器类 Widgets",
     "scroll": "可滚动 Widgets",
+    "function": "功能型 Widgets",
   };
 
   static List<RouterBean> allRoutes = [
@@ -194,6 +196,14 @@ class RouterConfig {
       "scroll",
       (context) => ScrollControllerAbout(
             title: "滚动监听及控制ScrollController",
+          ),
+    ),
+    RouterBean(
+      "/willpopscopeabout",
+      "导航返回拦截-WillPopScope",
+      "function",
+      (context) => WillPopScopeAbout(
+            title: "导航返回拦截-WillPopScope",
           ),
     ),
   ];

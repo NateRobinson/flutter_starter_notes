@@ -12,12 +12,16 @@
 
 # 如何使用
 
-本项目的结构和开源电子书 [https://github.com/flutterchina/flutter-in-action](https://github.com/flutterchina/flutter-in-action) 目录保持一致，学习的时候可以一遍学习书籍知识，一遍参考此项目的实践代码。
+本项目的结构和开源电子书 [https://github.com/flutterchina/flutter-in-action](https://github.com/flutterchina/flutter-in-action) 目录保持一致，学习的时候可以一边学习书籍内容，一边参考此项目进行代码实践。
 
 # 目录
 
-- [基础 Widgets](#1. 基础 Widgets)
-    - [1.1. Text 相关](#1.1. Text 相关)
+- [1. 基础 Widgets](#-1-基础-widgets)
+    - [1.1. Text 相关](#-11-text-相关)
+    - [1.2. Button 相关](#-12-button-相关)
+    - [1.3. 图片及 ICON 相关](#13-图片及-icon-相关)
+    - [1.4. 单选开关和复选框相关](#-14-单选开关和复选框相关)
+    - [1.5. 输入框及表单相关](#-15-输入框及表单相关相关)
 
 
 ## 1. 基础 Widgets
@@ -28,31 +32,31 @@
 
 [BookLink: 文本字体样式](https://book.flutterchina.club/chapter3/text.html)
 
-#### 1.2. Button 相关
+### 1.2. Button 相关
 
 [SouceCode: ButtonAbout.dart](./lib/ui/ButtonAbout.dart)
 
 [BookLink: 按钮](https://book.flutterchina.club/chapter3/buttons.html)
 
-#### 1.3. 图片及 ICON 相关
+### 1.3. 图片及 ICON 相关
 
 [SouceCode: ImageAndIconAbout.dart](./lib/ui/ImageAndIconAbout.dart)
 
 [BookLink: 图片及ICON](https://book.flutterchina.club/chapter3/img_and_icon.html)
 
-#### 1.4. 单选开关和复选框相关
+### 1.4. 单选开关和复选框相关
 
 [SouceCode: SwitchAndCheckBoxAbout.dart](./lib/ui/SwitchAndCheckBoxAbout.dart)
 
 [BookLink: 单选开关和复选框](https://book.flutterchina.club/chapter3/radio_and_checkbox.html)
 
-#### 1.5. 输入框及表单相关
+### 1.5. 输入框及表单相关
 
 [SouceCode: InputAndFormAbout.dart](./lib/ui/InputAndFormAbout.dart)
 
 [BookLink: 输入框及表单](https://book.flutterchina.club/chapter3/input_and_form.html)
 
-### 2. 布局类 Widgets
+## 2. 布局类 Widgets
 
 #### 2.1. Row 和 Column 相关
 

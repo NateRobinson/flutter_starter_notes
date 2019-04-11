@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_starter_notes/ui/BoxAbout.dart';
 import 'package:flutter_starter_notes/ui/ButtonAbout.dart';
 import 'package:flutter_starter_notes/ui/ContainerAbout.dart';
+import 'package:flutter_starter_notes/ui/CustomScrollViewAbout.dart';
 import 'package:flutter_starter_notes/ui/DecoratedBoxAbout.dart';
 import 'package:flutter_starter_notes/ui/FlexAbout.dart';
 import 'package:flutter_starter_notes/ui/GridViewAbout.dart';
@@ -176,6 +177,14 @@ class RouterConfig {
       "scroll",
       (context) => GridViewAbout(
             title: "GridView",
+          ),
+    ),
+    RouterBean(
+      "/customscrollviewabout",
+      "CustomScrollView",
+      "scroll",
+      (context) => CustomScrollViewAbout(
+            title: "CustomScrollView",
           ),
     ),
   ];

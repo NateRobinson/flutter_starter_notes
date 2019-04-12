@@ -5,6 +5,7 @@ import 'package:flutter_starter_notes/ui/ContainerAbout.dart';
 import 'package:flutter_starter_notes/ui/CustomScrollViewAbout.dart';
 import 'package:flutter_starter_notes/ui/DecoratedBoxAbout.dart';
 import 'package:flutter_starter_notes/ui/FlexAbout.dart';
+import 'package:flutter_starter_notes/ui/GestureAbout.dart';
 import 'package:flutter_starter_notes/ui/GridViewAbout.dart';
 import 'package:flutter_starter_notes/ui/HomePage.dart';
 import 'package:flutter_starter_notes/ui/ImageAndIconAbout.dart';
@@ -232,6 +233,14 @@ class RouterConfig {
       "eventAndNotification",
       (context) => PointerEventAbout(
             title: "原始指针事件处理",
+          ),
+    ),
+    RouterBean(
+      "/gestureabout",
+      "手势识别",
+      "eventAndNotification",
+      (context) => GestureAbout(
+            title: "手势识别",
           ),
     ),
   ];

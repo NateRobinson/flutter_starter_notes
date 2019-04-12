@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_starter_notes/config/RouterConfig.dart';
+import 'package:flutter_starter_notes/ui/eventbus/EventBus.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -9,7 +10,29 @@ class HomePage extends StatefulWidget {
 }
 
 class HomePageState extends State<HomePage> {
+  String title = "Flutter Starter Notes App";
+
   final List<HomeMenuItem> _menus = RouterConfig.genMenus();
+
+  EventCallback listener;
+
+  @override
+  void initState() {
+    super.initState();
+    listener = (arg) {
+      setState(() {
+        this.title = "Event Bus Worked";
+      });
+    };
+    //注册监听更改标题事件
+    bus.on("chanageTitle", listener);
+  }
+
+  @override
+  void dispose() {
+    super.dispose();
+    bus.off("chanageTitle", listener);
+  }
 
   void onTitleClick(num index) {
     setState(() {
@@ -86,7 +109,7 @@ class HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Flutter Starter Notes App'),
+        title: Text(title),
       ),
       body: SingleChildScrollView(
         child: buildContent(),

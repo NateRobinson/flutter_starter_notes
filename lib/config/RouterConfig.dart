@@ -4,6 +4,7 @@ import 'package:flutter_starter_notes/ui/ButtonAbout.dart';
 import 'package:flutter_starter_notes/ui/ContainerAbout.dart';
 import 'package:flutter_starter_notes/ui/CustomScrollViewAbout.dart';
 import 'package:flutter_starter_notes/ui/DecoratedBoxAbout.dart';
+import 'package:flutter_starter_notes/ui/EventBusAbout.dart';
 import 'package:flutter_starter_notes/ui/FlexAbout.dart';
 import 'package:flutter_starter_notes/ui/GestureAbout.dart';
 import 'package:flutter_starter_notes/ui/GridViewAbout.dart';
@@ -241,6 +242,14 @@ class RouterConfig {
       "eventAndNotification",
       (context) => GestureAbout(
             title: "手势识别",
+          ),
+    ),
+    RouterBean(
+      "/eventbusabout",
+      "全局事件总线",
+      "eventAndNotification",
+      (context) => EventBusAbout(
+            title: "全局事件总线",
           ),
     ),
   ];

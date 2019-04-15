@@ -14,6 +14,7 @@ import 'package:flutter_starter_notes/ui/InheritedWidgetAbout.dart';
 import 'package:flutter_starter_notes/ui/InputAndFormAbout.dart';
 import 'package:flutter_starter_notes/ui/ListViewAbout.dart';
 import 'package:flutter_starter_notes/ui/MaterialContainerAbout.dart';
+import 'package:flutter_starter_notes/ui/NotificationAbout.dart';
 import 'package:flutter_starter_notes/ui/PaddingAbout.dart';
 import 'package:flutter_starter_notes/ui/PointerEventAbout.dart';
 import 'package:flutter_starter_notes/ui/RowAndColumnAbout.dart';
@@ -250,6 +251,14 @@ class RouterConfig {
       "eventAndNotification",
       (context) => EventBusAbout(
             title: "全局事件总线",
+          ),
+    ),
+    RouterBean(
+      "/notificationabout",
+      "通知Notification",
+      "eventAndNotification",
+      (context) => NotificationAbout(
+            title: "通知Notification",
           ),
     ),
   ];

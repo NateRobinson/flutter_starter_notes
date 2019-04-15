@@ -194,7 +194,33 @@
 
 [BookLink: 主题-Theme](https://book.flutterchina.club/chapter7/theme.html)
 
+## 6. 事件处理与通知
+
+### 6.1 原始指针事件处理
+
+[SouceCode: PointerEventAbout.dart](./lib/ui/PointerEventAbout.dart)
+
+[BookLink: 原始指针事件处理](https://book.flutterchina.club/chapter8/listener.html)
+
+### 6.2 手势识别
+
+[SouceCode: GestureAbout.dart](./lib/ui/GestureAbout.dart)
+
+[BookLink: 手势识别](https://book.flutterchina.club/chapter8/gesture.html)
+
+### 6.3 全局事件总线
+
+[SouceCode: EventBusAbout.dart](./lib/ui/EventBusAbout.dart)
+
+[BookLink: 全局事件总线](https://book.flutterchina.club/chapter8/eventbus.html)
+
+### 6.4 通知Notification
+
+[SouceCode: NotificationAbout.dart](./lib/ui/NotificationAbout.dart)
+
+[BookLink: 通知Notification](https://book.flutterchina.club/chapter8/notification.html)
+
 ## 贡献
 
-👏👏👏 欢迎大家参与进项目的贡献！
+👏👏👏 欢迎参与项目的开源贡献！欢迎 Star 🌟 和 PR ～
 

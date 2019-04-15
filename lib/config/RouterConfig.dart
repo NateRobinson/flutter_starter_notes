@@ -24,6 +24,7 @@ import 'package:flutter_starter_notes/ui/RowAndColumnAbout.dart';
 import 'package:flutter_starter_notes/ui/ScrollControllerAbout.dart';
 import 'package:flutter_starter_notes/ui/SingleChildScrollAbout.dart';
 import 'package:flutter_starter_notes/ui/StackAndPositionedAbout.dart';
+import 'package:flutter_starter_notes/ui/StaggeredAnimationAbout.dart';
 import 'package:flutter_starter_notes/ui/SwitchAndCheckBoxAbout.dart';
 import 'package:flutter_starter_notes/ui/TextAbout.dart';
 import 'package:flutter_starter_notes/ui/ThemeAbout.dart';
@@ -283,10 +284,18 @@ class RouterConfig {
     ),
     RouterBean(
       "/heroanimationabout",
-      "Hero动画",
+      "Hero 动画",
       "animation",
       (context) => HeroAnimationAbout(
-            title: "Hero动画",
+            title: "Hero 动画",
+          ),
+    ),
+    RouterBean(
+      "/staggeredanimationabout",
+      "交错动画",
+      "animation",
+      (context) => StaggeredAnimationAbout(
+            title: "交错动画",
           ),
     ),
   ];

@@ -17,6 +17,7 @@ import 'package:flutter_starter_notes/ui/ListViewAbout.dart';
 import 'package:flutter_starter_notes/ui/MaterialContainerAbout.dart';
 import 'package:flutter_starter_notes/ui/NotificationAbout.dart';
 import 'package:flutter_starter_notes/ui/PaddingAbout.dart';
+import 'package:flutter_starter_notes/ui/PageChangeAnimationAbout.dart';
 import 'package:flutter_starter_notes/ui/PointerEventAbout.dart';
 import 'package:flutter_starter_notes/ui/RowAndColumnAbout.dart';
 import 'package:flutter_starter_notes/ui/ScrollControllerAbout.dart';
@@ -269,6 +270,14 @@ class RouterConfig {
       "animation",
       (context) => BasicAnimationStructureAbout(
             title: "动画结构",
+          ),
+    ),
+    RouterBean(
+      "/pagechangeanimationabout",
+      "自定义路由过渡动画",
+      "animation",
+      (context) => PageChangeAnimationAbout(
+            title: "自定义路由过渡动画",
           ),
     ),
   ];

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_starter_notes/ui/BasicAnimationStructureAbout.dart';
 import 'package:flutter_starter_notes/ui/BoxAbout.dart';
 import 'package:flutter_starter_notes/ui/ButtonAbout.dart';
+import 'package:flutter_starter_notes/ui/CombinationWidgetAbout.dart';
 import 'package:flutter_starter_notes/ui/ContainerAbout.dart';
 import 'package:flutter_starter_notes/ui/CustomScrollViewAbout.dart';
 import 'package:flutter_starter_notes/ui/DecoratedBoxAbout.dart';
@@ -41,6 +42,7 @@ class RouterConfig {
     "function": "功能型 Widgets",
     "eventAndNotification": "事件处理与通知",
     "animation": "动画",
+    "custom": "自定义 Widgets",
   };
 
   static List<RouterBean> allRoutes = [
@@ -296,6 +298,14 @@ class RouterConfig {
       "animation",
       (context) => StaggeredAnimationAbout(
             title: "交错动画",
+          ),
+    ),
+    RouterBean(
+      "/combinationwidgetabout",
+      "通过组合现有Widget实现",
+      "custom",
+      (context) => CombinationWidgetAbout(
+            title: "通过组合现有Widget实现",
           ),
     ),
   ];

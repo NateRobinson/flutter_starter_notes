@@ -9,6 +9,7 @@ import 'package:flutter_starter_notes/ui/EventBusAbout.dart';
 import 'package:flutter_starter_notes/ui/FlexAbout.dart';
 import 'package:flutter_starter_notes/ui/GestureAbout.dart';
 import 'package:flutter_starter_notes/ui/GridViewAbout.dart';
+import 'package:flutter_starter_notes/ui/HeroAnimationAbout.dart';
 import 'package:flutter_starter_notes/ui/HomePage.dart';
 import 'package:flutter_starter_notes/ui/ImageAndIconAbout.dart';
 import 'package:flutter_starter_notes/ui/InheritedWidgetAbout.dart';
@@ -278,6 +279,14 @@ class RouterConfig {
       "animation",
       (context) => PageChangeAnimationAbout(
             title: "自定义路由过渡动画",
+          ),
+    ),
+    RouterBean(
+      "/heroanimationabout",
+      "Hero动画",
+      "animation",
+      (context) => HeroAnimationAbout(
+            title: "Hero动画",
           ),
     ),
   ];

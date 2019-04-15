@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_starter_notes/component/CommonTitle.dart';
-import 'package:flutter_starter_notes/ui/NewPage.dart';
 
 class PageChangeAnimationAbout extends StatelessWidget {
   PageChangeAnimationAbout({Key key, this.title});
@@ -19,7 +18,7 @@ class PageChangeAnimationAbout extends StatelessWidget {
             CommonTitle("路由切换动画"),
             RaisedButton(
               onPressed: () => {
-// 采用 PageRouteBuilder
+//                    采用 PageRouteBuilder
 //                    Navigator.push(
 //                        context,
 //                        PageRouteBuilder(
@@ -96,5 +95,27 @@ class FadeRoute extends PageRoute {
       //是返回，则不应用过渡动画
       return Padding(padding: EdgeInsets.zero);
     }
+  }
+}
+
+class NewPage extends StatelessWidget {
+  NewPage({Key key, this.title});
+
+  final String title;
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+        appBar: AppBar(
+          title: Text(title),
+        ),
+        body: Container(
+          color: Colors.amber.shade400,
+          alignment: Alignment.center,
+          child: Text(
+            "New Page",
+            style: TextStyle(color: Colors.white, fontSize: 40),
+          ),
+        ));
   }
 }

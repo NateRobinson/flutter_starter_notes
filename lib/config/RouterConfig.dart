@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_starter_notes/ui/BasicAnimationStructureAbout.dart';
 import 'package:flutter_starter_notes/ui/BoxAbout.dart';
 import 'package:flutter_starter_notes/ui/ButtonAbout.dart';
 import 'package:flutter_starter_notes/ui/ContainerAbout.dart';
@@ -36,6 +37,7 @@ class RouterConfig {
     "scroll": "可滚动 Widgets",
     "function": "功能型 Widgets",
     "eventAndNotification": "事件处理与通知",
+    "animation": "动画",
   };
 
   static List<RouterBean> allRoutes = [
@@ -259,6 +261,14 @@ class RouterConfig {
       "eventAndNotification",
       (context) => NotificationAbout(
             title: "通知Notification",
+          ),
+    ),
+    RouterBean(
+      "/basicanimationstructureabout",
+      "动画结构",
+      "animation",
+      (context) => BasicAnimationStructureAbout(
+            title: "动画结构",
           ),
     ),
   ];

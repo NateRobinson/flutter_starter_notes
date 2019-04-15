@@ -4,6 +4,7 @@ import 'package:flutter_starter_notes/ui/BoxAbout.dart';
 import 'package:flutter_starter_notes/ui/ButtonAbout.dart';
 import 'package:flutter_starter_notes/ui/CombinationWidgetAbout.dart';
 import 'package:flutter_starter_notes/ui/ContainerAbout.dart';
+import 'package:flutter_starter_notes/ui/CustomPaintAbout.dart';
 import 'package:flutter_starter_notes/ui/CustomScrollViewAbout.dart';
 import 'package:flutter_starter_notes/ui/DecoratedBoxAbout.dart';
 import 'package:flutter_starter_notes/ui/EventBusAbout.dart';
@@ -315,6 +316,14 @@ class RouterConfig {
       "custom",
       (context) => TurnBoxAbout(
             title: "实例：TurnBox",
+          ),
+    ),
+    RouterBean(
+      "/custompaintabout",
+      "CustomPaint与Canvas",
+      "custom",
+      (context) => CustomPaintAbout(
+            title: "CustomPaint与Canvas",
           ),
     ),
   ];

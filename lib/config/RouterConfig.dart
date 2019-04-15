@@ -30,6 +30,7 @@ import 'package:flutter_starter_notes/ui/SwitchAndCheckBoxAbout.dart';
 import 'package:flutter_starter_notes/ui/TextAbout.dart';
 import 'package:flutter_starter_notes/ui/ThemeAbout.dart';
 import 'package:flutter_starter_notes/ui/TransformAbout.dart';
+import 'package:flutter_starter_notes/ui/TurnBoxAbout.dart';
 import 'package:flutter_starter_notes/ui/WillPopScopeAbout.dart';
 import 'package:flutter_starter_notes/ui/WrapAndFlowAbout.dart';
 
@@ -306,6 +307,14 @@ class RouterConfig {
       "custom",
       (context) => CombinationWidgetAbout(
             title: "通过组合现有Widget实现",
+          ),
+    ),
+    RouterBean(
+      "/turnboxabout",
+      "实例：TurnBox",
+      "custom",
+      (context) => TurnBoxAbout(
+            title: "实例：TurnBox",
           ),
     ),
   ];

@@ -9,6 +9,7 @@ import 'package:flutter_starter_notes/ui/CustomPaintAbout.dart';
 import 'package:flutter_starter_notes/ui/CustomScrollViewAbout.dart';
 import 'package:flutter_starter_notes/ui/DecoratedBoxAbout.dart';
 import 'package:flutter_starter_notes/ui/EventBusAbout.dart';
+import 'package:flutter_starter_notes/ui/FileOperationAbout.dart';
 import 'package:flutter_starter_notes/ui/FlexAbout.dart';
 import 'package:flutter_starter_notes/ui/GestureAbout.dart';
 import 'package:flutter_starter_notes/ui/GridViewAbout.dart';
@@ -46,6 +47,7 @@ class RouterConfig {
     "eventAndNotification": "事件处理与通知",
     "animation": "动画",
     "custom": "自定义 Widgets",
+    "fileAndHttp": "文件操作与网络请求",
   };
 
   static List<RouterBean> allRoutes = [
@@ -333,6 +335,14 @@ class RouterConfig {
       "custom",
       (context) => CircleProgressWidgetAbout(
             title: "实例：圆形渐变进度条(自绘)",
+          ),
+    ),
+    RouterBean(
+      "/fileoperationabout",
+      "文件操作",
+      "fileAndHttp",
+      (context) => FileOperationAbout(
+            title: "文件操作",
           ),
     ),
   ];

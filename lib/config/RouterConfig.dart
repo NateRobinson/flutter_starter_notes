@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_starter_notes/ui/BasicAnimationStructureAbout.dart';
 import 'package:flutter_starter_notes/ui/BoxAbout.dart';
 import 'package:flutter_starter_notes/ui/ButtonAbout.dart';
+import 'package:flutter_starter_notes/ui/CircleProgressWidgetAbout.dart';
 import 'package:flutter_starter_notes/ui/CombinationWidgetAbout.dart';
 import 'package:flutter_starter_notes/ui/ContainerAbout.dart';
 import 'package:flutter_starter_notes/ui/CustomPaintAbout.dart';
@@ -324,6 +325,14 @@ class RouterConfig {
       "custom",
       (context) => CustomPaintAbout(
             title: "CustomPaint与Canvas",
+          ),
+    ),
+    RouterBean(
+      "/circleprogresswidgetabout",
+      "实例：圆形渐变进度条(自绘)",
+      "custom",
+      (context) => CircleProgressWidgetAbout(
+            title: "实例：圆形渐变进度条(自绘)",
           ),
     ),
   ];

@@ -8,6 +8,7 @@ import 'package:flutter_starter_notes/ui/ContainerAbout.dart';
 import 'package:flutter_starter_notes/ui/CustomPaintAbout.dart';
 import 'package:flutter_starter_notes/ui/CustomScrollViewAbout.dart';
 import 'package:flutter_starter_notes/ui/DecoratedBoxAbout.dart';
+import 'package:flutter_starter_notes/ui/DioAbout.dart';
 import 'package:flutter_starter_notes/ui/EventBusAbout.dart';
 import 'package:flutter_starter_notes/ui/FileOperationAbout.dart';
 import 'package:flutter_starter_notes/ui/FlexAbout.dart';
@@ -352,6 +353,14 @@ class RouterConfig {
       "fileAndHttp",
       (context) => HttpClientAbout(
             title: "Http请求-HttpClient",
+          ),
+    ),
+    RouterBean(
+      "/dioabout",
+      "Http请求-Dio package",
+      "fileAndHttp",
+      (context) => DioAbout(
+            title: "Http请求-Dio package",
           ),
     ),
   ];

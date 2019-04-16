@@ -49,6 +49,16 @@
     - [6.2. 手势识别](#62-手势识别)
     - [6.3. 全局事件总线](#63-全局事件总线)
     - [6.4. 通知Notification](#64-通知notification)
+- [7. 动画](#7-动画)
+    - [7.1. 动画结构](#61-原始指针事件处理)
+    - [7.2. 自定义路由过渡动画](#62-手势识别)
+    - [7.3. Hero 动画](#63-全局事件总线)
+    - [7.4. 交错动画](#64-交错动画)
+- [8. 自定义 Widgets](#7-动画)
+    - [8.1. 通过组合现有Widget实现](#61-原始指针事件处理)
+    - [8.2. 实例：TurnBox](#62-手势识别)
+    - [8.3. CustomPaint与Canvas](#63-全局事件总线)
+    - [8.4. 实例：圆形渐变进度条(自绘)](#64-通知notification)
 - [贡献](#贡献)
 
 ## 1. 基础 Widgets
@@ -224,6 +234,58 @@
 [SouceCode: NotificationAbout.dart](./lib/ui/NotificationAbout.dart)
 
 [BookLink: 通知Notification](https://book.flutterchina.club/chapter8/notification.html)
+
+## 7. 动画
+
+### 7.1 动画结构
+
+[SouceCode: BasicAnimationStructureAbout.dart](./lib/ui/BasicAnimationStructureAbout.dart)
+
+[BookLink: 动画结构](https://book.flutterchina.club/chapter9/animation_structure.html)
+
+### 7.2 自定义路由过渡动画
+
+[SouceCode: PageChangeAnimationAbout.dart](./lib/ui/PageChangeAnimationAbout.dart)
+
+[BookLink: 自定义路由过渡动画](https://book.flutterchina.club/chapter9/route_transition.html)
+
+### 7.3 Hero动画
+
+[SouceCode: HeroAnimationAbout.dart](./lib/ui/HeroAnimationAbout.dart)
+
+[BookLink: 自定义路由过渡动画](https://book.flutterchina.club/chapter9/hero.html)
+
+### 7.4 交错动画
+
+[SouceCode: StaggeredAnimationAbout.dart](./lib/ui/StaggeredAnimationAbout.dart)
+
+[BookLink: 交错动画](https://book.flutterchina.club/chapter9/stagger_animation.html)
+
+## 8. 自定义 Widgets
+
+### 8.1 通过组合现有 Widget 实现
+
+[SouceCode: CombinationWidgetAbout.dart](./lib/ui/CombinationWidgetAbout.dart)
+
+[BookLink: 通过组合现有 Widget 实现](https://book.flutterchina.club/chapter13/combine.html)
+
+### 8.2 实例：TurnBox
+
+[SouceCode: TurnBoxAbout.dart](./lib/ui/TurnBoxAbout.dart)
+
+[BookLink: 实例：TurnBox](https://book.flutterchina.club/chapter13/turn_box.html)
+
+### 8.3 CustomPaint 与 Canvas
+
+[SouceCode: CustomPaintAbout.dart](./lib/ui/CustomPaintAbout.dart)
+
+[BookLink: CustomPaint 与 Canvas](https://book.flutterchina.club/chapter13/custom_paint.html)
+
+### 8.4 实例：圆形渐变进度条(自绘)
+
+[SouceCode: CircleProgressWidgetAbout.dart](./lib/ui/CircleProgressWidgetAbout.dart)
+
+[BookLink: 实例：圆形渐变进度条(自绘)](https://book.flutterchina.club/chapter13/gradient_circular_progress_demo.html)
 
 ## 贡献
 

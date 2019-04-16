@@ -305,10 +305,10 @@ class RouterConfig {
     ),
     RouterBean(
       "/combinationwidgetabout",
-      "通过组合现有Widget实现",
+      "通过组合现有 Widget 实现",
       "custom",
       (context) => CombinationWidgetAbout(
-            title: "通过组合现有Widget实现",
+            title: "通过组合现有 Widget 实现",
           ),
     ),
     RouterBean(
@@ -321,10 +321,10 @@ class RouterConfig {
     ),
     RouterBean(
       "/custompaintabout",
-      "CustomPaint与Canvas",
+      "CustomPaint 与 Canvas",
       "custom",
       (context) => CustomPaintAbout(
-            title: "CustomPaint与Canvas",
+            title: "CustomPaint 与 Canvas",
           ),
     ),
     RouterBean(

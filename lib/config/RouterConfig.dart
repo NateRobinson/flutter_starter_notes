@@ -15,6 +15,7 @@ import 'package:flutter_starter_notes/ui/GestureAbout.dart';
 import 'package:flutter_starter_notes/ui/GridViewAbout.dart';
 import 'package:flutter_starter_notes/ui/HeroAnimationAbout.dart';
 import 'package:flutter_starter_notes/ui/HomePage.dart';
+import 'package:flutter_starter_notes/ui/HttpClientAbout.dart';
 import 'package:flutter_starter_notes/ui/ImageAndIconAbout.dart';
 import 'package:flutter_starter_notes/ui/InheritedWidgetAbout.dart';
 import 'package:flutter_starter_notes/ui/InputAndFormAbout.dart';
@@ -343,6 +344,14 @@ class RouterConfig {
       "fileAndHttp",
       (context) => FileOperationAbout(
             title: "文件操作",
+          ),
+    ),
+    RouterBean(
+      "/httpclientabout",
+      "Http请求-HttpClient",
+      "fileAndHttp",
+      (context) => HttpClientAbout(
+            title: "Http请求-HttpClient",
           ),
     ),
   ];

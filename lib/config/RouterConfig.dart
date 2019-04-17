@@ -29,6 +29,7 @@ import 'package:flutter_starter_notes/ui/PointerEventAbout.dart';
 import 'package:flutter_starter_notes/ui/RowAndColumnAbout.dart';
 import 'package:flutter_starter_notes/ui/ScrollControllerAbout.dart';
 import 'package:flutter_starter_notes/ui/SingleChildScrollAbout.dart';
+import 'package:flutter_starter_notes/ui/SocketAbout.dart';
 import 'package:flutter_starter_notes/ui/StackAndPositionedAbout.dart';
 import 'package:flutter_starter_notes/ui/StaggeredAnimationAbout.dart';
 import 'package:flutter_starter_notes/ui/SwitchAndCheckBoxAbout.dart';
@@ -370,6 +371,14 @@ class RouterConfig {
       "fileAndHttp",
       (context) => WebSocketAbout(
             title: "WebSocket",
+          ),
+    ),
+    RouterBean(
+      "/socketabout",
+      "使用Socket API",
+      "fileAndHttp",
+      (context) => SocketAbout(
+            title: "使用Socket API",
           ),
     ),
   ];

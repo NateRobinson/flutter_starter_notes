@@ -36,6 +36,7 @@ import 'package:flutter_starter_notes/ui/TextAbout.dart';
 import 'package:flutter_starter_notes/ui/ThemeAbout.dart';
 import 'package:flutter_starter_notes/ui/TransformAbout.dart';
 import 'package:flutter_starter_notes/ui/TurnBoxAbout.dart';
+import 'package:flutter_starter_notes/ui/WebSocketAbout.dart';
 import 'package:flutter_starter_notes/ui/WillPopScopeAbout.dart';
 import 'package:flutter_starter_notes/ui/WrapAndFlowAbout.dart';
 
@@ -361,6 +362,14 @@ class RouterConfig {
       "fileAndHttp",
       (context) => DioAbout(
             title: "Http请求-Dio package",
+          ),
+    ),
+    RouterBean(
+      "/websocketabout",
+      "WebSocket",
+      "fileAndHttp",
+      (context) => WebSocketAbout(
+            title: "WebSocket",
           ),
     ),
   ];

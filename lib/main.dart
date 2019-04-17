@@ -11,6 +11,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      //显示应用性能图
+      //showPerformanceOverlay: true,
+      //显示Material网格线，帮助对齐
+      //debugShowMaterialGrid: true,
       title: 'Flutter Starter Notes App',
       theme: ThemeData(
         primarySwatch: Colors.blue,

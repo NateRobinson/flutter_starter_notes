@@ -25,6 +25,7 @@ import 'package:flutter_starter_notes/ui/MaterialContainerAbout.dart';
 import 'package:flutter_starter_notes/ui/NotificationAbout.dart';
 import 'package:flutter_starter_notes/ui/PaddingAbout.dart';
 import 'package:flutter_starter_notes/ui/PageChangeAnimationAbout.dart';
+import 'package:flutter_starter_notes/ui/PluginDevelopAbout.dart';
 import 'package:flutter_starter_notes/ui/PointerEventAbout.dart';
 import 'package:flutter_starter_notes/ui/RowAndColumnAbout.dart';
 import 'package:flutter_starter_notes/ui/ScrollControllerAbout.dart';
@@ -52,6 +53,7 @@ class RouterConfig {
     "animation": "动画",
     "custom": "自定义 Widgets",
     "fileAndHttp": "文件操作与网络请求",
+    "packageAndPlugin": "包与插件",
   };
 
   static List<RouterBean> allRoutes = [
@@ -379,6 +381,14 @@ class RouterConfig {
       "fileAndHttp",
       (context) => SocketAbout(
             title: "使用Socket API",
+          ),
+    ),
+    RouterBean(
+      "/plugindevelopabout",
+      "插件开发",
+      "packageAndPlugin",
+      (context) => PluginDevelopAbout(
+            title: "插件开发",
           ),
     ),
   ];

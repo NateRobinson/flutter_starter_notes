@@ -46,17 +46,17 @@ import 'package:flutter_starter_notes/ui/WrapAndFlowAbout.dart';
 
 class RouterConfig {
   static Map<String, String> keys = {
-    "basic": "基础 Widgets",
-    "layout": "布局类 Widgets",
-    "container": "容器类 Widgets",
-    "scroll": "可滚动 Widgets",
-    "function": "功能型 Widgets",
-    "eventAndNotification": "事件处理与通知",
-    "animation": "动画",
-    "custom": "自定义 Widgets",
-    "fileAndHttp": "文件操作与网络请求",
-    "packageAndPlugin": "包与插件",
-    "localization": "国际化",
+    "basic": "1. 基础 Widgets",
+    "layout": "2. 布局类 Widgets",
+    "container": "3. 容器类 Widgets",
+    "scroll": "4. 可滚动 Widgets",
+    "function": "5. 功能型 Widgets",
+    "eventAndNotification": "6. 事件处理与通知",
+    "animation": "7. 动画",
+    "custom": "8. 自定义 Widgets",
+    "fileAndHttp": "9. 文件操作与网络请求",
+    "packageAndPlugin": "10. 包与插件",
+    "localization": "11. 国际化",
   };
 
   static List<RouterBean> allRoutes = [
@@ -68,7 +68,7 @@ class RouterConfig {
     ),
     RouterBean(
       "/textabout",
-      "文本及字体样式",
+      "1.1 文本及字体样式",
       "basic",
       (context) => TextAbout(
             title: "文本及字体样式",
@@ -76,7 +76,7 @@ class RouterConfig {
     ),
     RouterBean(
       "/buttonabout",
-      "按钮",
+      "1.2 按钮",
       "basic",
       (context) => ButtonAbout(
             title: "按钮",
@@ -84,7 +84,7 @@ class RouterConfig {
     ),
     RouterBean(
       "/imageandiconabout",
-      "图片及 Icon",
+      "1.3 图片及 Icon",
       "basic",
       (context) => ImageAndIconAbout(
             title: "图片及 Icon",
@@ -92,7 +92,7 @@ class RouterConfig {
     ),
     RouterBean(
       "/switchandcheckboxabout",
-      "单选开关和复选框",
+      "1.4 单选开关和复选框",
       "basic",
       (context) => SwitchAndCheckBoxAbout(
             title: "单选开关和复选框",
@@ -100,7 +100,7 @@ class RouterConfig {
     ),
     RouterBean(
       "/inputandformabout",
-      "输入框及表单",
+      "1.5 输入框及表单",
       "basic",
       (context) => InputAndFormAbout(
             title: "输入框及表单",
@@ -108,7 +108,7 @@ class RouterConfig {
     ),
     RouterBean(
       "/rowandcolumnabout",
-      "线性布局 Row, Column",
+      "2.1 线性布局 Row, Column",
       "layout",
       (context) => RowAndColumnAbout(
             title: "线性布局 Row, Column",
@@ -116,7 +116,7 @@ class RouterConfig {
     ),
     RouterBean(
       "/flexabout",
-      "弹性布局 Flex",
+      "2.2 弹性布局 Flex",
       "layout",
       (context) => FlexAbout(
             title: "弹性布局 Flex",
@@ -124,7 +124,7 @@ class RouterConfig {
     ),
     RouterBean(
       "/wrapandflowabout",
-      "流式布局 Wrap, Flow",
+      "2.3 流式布局 Wrap, Flow",
       "layout",
       (context) => WrapAndFlowAbout(
             title: "流式布局 Wrap, Flow",
@@ -132,7 +132,7 @@ class RouterConfig {
     ),
     RouterBean(
       "/stackandpositionedabout",
-      "层叠布局 Stack, Positioned",
+      "2.4 层叠布局 Stack, Positioned",
       "layout",
       (context) => StackAndPositionedAbout(
             title: "层叠布局 Stack, Positioned",
@@ -140,7 +140,7 @@ class RouterConfig {
     ),
     RouterBean(
       "/paddingabout",
-      "Padding",
+      "3.1 Padding",
       "container",
       (context) => PaddingAbout(
             title: "Padding",
@@ -148,7 +148,7 @@ class RouterConfig {
     ),
     RouterBean(
       "/boxabout",
-      "布局限制类容器 ConstrainedBox, SizeBox",
+      "3.2 布局限制类容器 ConstrainedBox, SizeBox",
       "container",
       (context) => BoxAbout(
             title: "布局限制类容器 ConstrainedBox, SizeBox",
@@ -156,7 +156,7 @@ class RouterConfig {
     ),
     RouterBean(
       "/decoratedboxabout",
-      "装饰容器 DecoratedBox",
+      "3.3 装饰容器 DecoratedBox",
       "container",
       (context) => DecoratedBoxAbout(
             title: "装饰容器 DecoratedBox",
@@ -164,7 +164,7 @@ class RouterConfig {
     ),
     RouterBean(
       "/transformabout",
-      "变换 Transform",
+      "3.4 变换 Transform",
       "container",
       (context) => TransformAbout(
             title: "变换 Transform",
@@ -172,7 +172,7 @@ class RouterConfig {
     ),
     RouterBean(
       "/containerabout",
-      "Container 容器",
+      "3.5 Container 容器",
       "container",
       (context) => ContainerAbout(
             title: "Container 容器",
@@ -180,7 +180,7 @@ class RouterConfig {
     ),
     RouterBean(
       "/materialcontainerabout",
-      "Scaffold、TabBar、底部导航",
+      "3.6 Scaffold、TabBar、底部导航",
       "container",
       (context) => MaterialContainerAbout(
             title: "Scaffold、TabBar、底部导航",
@@ -188,7 +188,7 @@ class RouterConfig {
     ),
     RouterBean(
       "/singlechildscrollview",
-      "SingleChildScrollView",
+      "4.1 SingleChildScrollView",
       "scroll",
       (context) => SingleChildScrollAbout(
             title: "SingleChildScrollView",
@@ -196,7 +196,7 @@ class RouterConfig {
     ),
     RouterBean(
       "/listviewabout",
-      "ListView",
+      "4.2 ListView",
       "scroll",
       (context) => ListViewAbout(
             title: "ListView",
@@ -204,7 +204,7 @@ class RouterConfig {
     ),
     RouterBean(
       "/gridviewabout",
-      "GridView",
+      "4.3 GridView",
       "scroll",
       (context) => GridViewAbout(
             title: "GridView",
@@ -212,7 +212,7 @@ class RouterConfig {
     ),
     RouterBean(
       "/customscrollviewabout",
-      "CustomScrollView",
+      "4.4 CustomScrollView",
       "scroll",
       (context) => CustomScrollViewAbout(
             title: "CustomScrollView",
@@ -220,7 +220,7 @@ class RouterConfig {
     ),
     RouterBean(
       "/scrollcontrollerabout",
-      "滚动监听及控制ScrollController",
+      "4.5 滚动监听及控制ScrollController",
       "scroll",
       (context) => ScrollControllerAbout(
             title: "滚动监听及控制ScrollController",
@@ -228,7 +228,7 @@ class RouterConfig {
     ),
     RouterBean(
       "/willpopscopeabout",
-      "导航返回拦截-WillPopScope",
+      "5.1 导航返回拦截-WillPopScope",
       "function",
       (context) => WillPopScopeAbout(
             title: "导航返回拦截-WillPopScope",
@@ -236,7 +236,7 @@ class RouterConfig {
     ),
     RouterBean(
       "/inheritedwidgetabout",
-      "数据共享-InheritedWidget",
+      "5.2 数据共享-InheritedWidget",
       "function",
       (context) => InheritedWidgetAbout(
             title: "数据共享-InheritedWidget",
@@ -244,7 +244,7 @@ class RouterConfig {
     ),
     RouterBean(
       "/themeabout",
-      "主题-Theme",
+      "5.3 主题-Theme",
       "function",
       (context) => ThemeAbout(
             title: "主题-Theme",
@@ -252,7 +252,7 @@ class RouterConfig {
     ),
     RouterBean(
       "/pointereventabout",
-      "原始指针事件处理",
+      "6.1 原始指针事件处理",
       "eventAndNotification",
       (context) => PointerEventAbout(
             title: "原始指针事件处理",
@@ -260,7 +260,7 @@ class RouterConfig {
     ),
     RouterBean(
       "/gestureabout",
-      "手势识别",
+      "6.2 手势识别",
       "eventAndNotification",
       (context) => GestureAbout(
             title: "手势识别",
@@ -268,7 +268,7 @@ class RouterConfig {
     ),
     RouterBean(
       "/eventbusabout",
-      "全局事件总线",
+      "6.3 全局事件总线",
       "eventAndNotification",
       (context) => EventBusAbout(
             title: "全局事件总线",
@@ -276,7 +276,7 @@ class RouterConfig {
     ),
     RouterBean(
       "/notificationabout",
-      "通知Notification",
+      "6.4 通知Notification",
       "eventAndNotification",
       (context) => NotificationAbout(
             title: "通知Notification",
@@ -284,7 +284,7 @@ class RouterConfig {
     ),
     RouterBean(
       "/basicanimationstructureabout",
-      "动画结构",
+      "7.1 动画结构",
       "animation",
       (context) => BasicAnimationStructureAbout(
             title: "动画结构",
@@ -292,7 +292,7 @@ class RouterConfig {
     ),
     RouterBean(
       "/pagechangeanimationabout",
-      "自定义路由过渡动画",
+      "7.2 自定义路由过渡动画",
       "animation",
       (context) => PageChangeAnimationAbout(
             title: "自定义路由过渡动画",
@@ -300,7 +300,7 @@ class RouterConfig {
     ),
     RouterBean(
       "/heroanimationabout",
-      "Hero 动画",
+      "7.3 Hero 动画",
       "animation",
       (context) => HeroAnimationAbout(
             title: "Hero 动画",
@@ -308,7 +308,7 @@ class RouterConfig {
     ),
     RouterBean(
       "/staggeredanimationabout",
-      "交错动画",
+      "7.4 交错动画",
       "animation",
       (context) => StaggeredAnimationAbout(
             title: "交错动画",
@@ -316,7 +316,7 @@ class RouterConfig {
     ),
     RouterBean(
       "/combinationwidgetabout",
-      "通过组合现有 Widget 实现",
+      "8.1 通过组合现有 Widget 实现",
       "custom",
       (context) => CombinationWidgetAbout(
             title: "通过组合现有 Widget 实现",
@@ -324,7 +324,7 @@ class RouterConfig {
     ),
     RouterBean(
       "/turnboxabout",
-      "实例：TurnBox",
+      "8.2 实例：TurnBox",
       "custom",
       (context) => TurnBoxAbout(
             title: "实例：TurnBox",
@@ -332,7 +332,7 @@ class RouterConfig {
     ),
     RouterBean(
       "/custompaintabout",
-      "CustomPaint 与 Canvas",
+      "8.3 CustomPaint 与 Canvas",
       "custom",
       (context) => CustomPaintAbout(
             title: "CustomPaint 与 Canvas",
@@ -340,7 +340,7 @@ class RouterConfig {
     ),
     RouterBean(
       "/circleprogresswidgetabout",
-      "实例：圆形渐变进度条(自绘)",
+      "8.4 实例：圆形渐变进度条(自绘)",
       "custom",
       (context) => CircleProgressWidgetAbout(
             title: "实例：圆形渐变进度条(自绘)",
@@ -348,7 +348,7 @@ class RouterConfig {
     ),
     RouterBean(
       "/fileoperationabout",
-      "文件操作",
+      "9.1 文件操作",
       "fileAndHttp",
       (context) => FileOperationAbout(
             title: "文件操作",
@@ -356,7 +356,7 @@ class RouterConfig {
     ),
     RouterBean(
       "/httpclientabout",
-      "Http请求-HttpClient",
+      "9.2 Http请求-HttpClient",
       "fileAndHttp",
       (context) => HttpClientAbout(
             title: "Http请求-HttpClient",
@@ -364,7 +364,7 @@ class RouterConfig {
     ),
     RouterBean(
       "/dioabout",
-      "Http请求-Dio package",
+      "9.3 Http请求-Dio package",
       "fileAndHttp",
       (context) => DioAbout(
             title: "Http请求-Dio package",
@@ -372,7 +372,7 @@ class RouterConfig {
     ),
     RouterBean(
       "/websocketabout",
-      "WebSocket",
+      "9.4 WebSocket",
       "fileAndHttp",
       (context) => WebSocketAbout(
             title: "WebSocket",
@@ -380,7 +380,7 @@ class RouterConfig {
     ),
     RouterBean(
       "/socketabout",
-      "使用Socket API",
+      "9.5 使用Socket API",
       "fileAndHttp",
       (context) => SocketAbout(
             title: "使用Socket API",
@@ -388,7 +388,7 @@ class RouterConfig {
     ),
     RouterBean(
       "/plugindevelopabout",
-      "插件开发",
+      "10.1 插件开发",
       "packageAndPlugin",
       (context) => PluginDevelopAbout(
             title: "插件开发",
@@ -396,18 +396,18 @@ class RouterConfig {
     ),
     RouterBean(
       "/localizationabout",
-      "实现Localizations",
+      "11.1 实现 Localizations",
       "localization",
       (context) => LocalizationAbout(
-            title: "实现Localizations",
+            title: "实现 Localizations",
           ),
     ),
     RouterBean(
       "/intlabout",
-      "使用Intl包",
+      "11.2 使用 Intl 包",
       "localization",
       (context) => IntlAbout(
-            title: "使用Intl包",
+            title: "使用 Intl 包",
           ),
     ),
   ];

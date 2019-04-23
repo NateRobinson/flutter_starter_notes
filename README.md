@@ -287,6 +287,61 @@
 
 [BookLink: 实例：圆形渐变进度条(自绘)](https://book.flutterchina.club/chapter13/gradient_circular_progress_demo.html)
 
+## 9. 文件操作与网络请求
+
+### 9.1 文件操作
+
+[SouceCode: FileOperationAbout.dart](./lib/ui/FileOperationAbout.dart)
+
+[BookLink: 文件操作](https://book.flutterchina.club/chapter10/file_operation.html)
+
+### 9.2 Http请求-HttpClient
+
+[SouceCode: HttpClientAbout.dart](./lib/ui/HttpClientAbout.dart)
+
+[BookLink: Http请求-HttpClient](https://book.flutterchina.club/chapter10/http.html)
+
+### 9.3 Http请求-Dio package
+
+[SouceCode: DioAbout.dart](./lib/ui/DioAbout.dart)
+
+[BookLink: Http请求-Dio package](https://book.flutterchina.club/chapter10/dio.html)
+
+### 9.4 WebSocket
+
+[SouceCode: WebSocketAbout.dart](./lib/ui/WebSocketAbout.dart)
+
+[BookLink: WebSocket](https://book.flutterchina.club/chapter10/websocket.html)
+
+### 9.5 使用Socket API
+
+[SouceCode: SocketAbout.dart](./lib/ui/SocketAbout.dart)
+
+[BookLink: 使用Socket API](https://book.flutterchina.club/chapter10/socket.html)
+
+## 10. 包与插件
+
+### 10.1 插件开发
+
+[SouceCode: PluginDevelopAbout.dart](./lib/ui/PluginDevelopAbout.dart)
+
+[BookLink: 插件开发](https://book.flutterchina.club/chapter11/)
+
+## 11. 国际化
+
+### 11.1 实现 Localizations
+
+[SouceCode: LocalizationAbout.dart](./lib/ui/LocalizationAbout.dart)
+
+[BookLink: 实现 Localizations](https://book.flutterchina.club/chapter12/locallization_implement.html)
+
+### 11.2 使用 Intl 包
+
+[SouceCode: IntlAbout.dart](./lib/ui/IntlAbout.dart)
+
+[BookLink: 使用 Intl 包](https://book.flutterchina.club/chapter12/intl.html)
+
+
 ## 贡献
 
 👏👏👏 欢迎参与项目的开源贡献！欢迎 Star 🌟 和 PR ～

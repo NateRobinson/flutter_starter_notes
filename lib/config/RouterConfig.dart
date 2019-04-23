@@ -20,6 +20,7 @@ import 'package:flutter_starter_notes/ui/HttpClientAbout.dart';
 import 'package:flutter_starter_notes/ui/ImageAndIconAbout.dart';
 import 'package:flutter_starter_notes/ui/InheritedWidgetAbout.dart';
 import 'package:flutter_starter_notes/ui/InputAndFormAbout.dart';
+import 'package:flutter_starter_notes/ui/IntlAbout.dart';
 import 'package:flutter_starter_notes/ui/ListViewAbout.dart';
 import 'package:flutter_starter_notes/ui/LocalizationAbout.dart';
 import 'package:flutter_starter_notes/ui/MaterialContainerAbout.dart';
@@ -399,6 +400,14 @@ class RouterConfig {
       "localization",
       (context) => LocalizationAbout(
             title: "实现Localizations",
+          ),
+    ),
+    RouterBean(
+      "/intlabout",
+      "使用Intl包",
+      "localization",
+      (context) => IntlAbout(
+            title: "使用Intl包",
           ),
     ),
   ];

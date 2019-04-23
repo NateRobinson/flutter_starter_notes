@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_starter_notes/config/RouterConfig.dart';
+import 'package:flutter_starter_notes/i10n/localization_intl.dart';
 import 'package:flutter_starter_notes/ui/LocalizationAbout.dart';
 
 void main() {
@@ -28,7 +29,9 @@ class MyApp extends StatelessWidget {
         GlobalMaterialLocalizations.delegate,
         GlobalWidgetsLocalizations.delegate,
         // 注册我们的Delegate
-        DemoLocalizationsDelegate()
+        DemoLocalizationsDelegate(),
+        // 注册基于 intl 生成的 Delegate
+        IntlLocalizationsDelegate()
       ],
       supportedLocales: [
         const Locale("en", "US"),

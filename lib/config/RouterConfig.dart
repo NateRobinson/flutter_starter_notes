@@ -21,6 +21,7 @@ import 'package:flutter_starter_notes/ui/ImageAndIconAbout.dart';
 import 'package:flutter_starter_notes/ui/InheritedWidgetAbout.dart';
 import 'package:flutter_starter_notes/ui/InputAndFormAbout.dart';
 import 'package:flutter_starter_notes/ui/ListViewAbout.dart';
+import 'package:flutter_starter_notes/ui/LocalizationAbout.dart';
 import 'package:flutter_starter_notes/ui/MaterialContainerAbout.dart';
 import 'package:flutter_starter_notes/ui/NotificationAbout.dart';
 import 'package:flutter_starter_notes/ui/PaddingAbout.dart';
@@ -54,6 +55,7 @@ class RouterConfig {
     "custom": "自定义 Widgets",
     "fileAndHttp": "文件操作与网络请求",
     "packageAndPlugin": "包与插件",
+    "localization": "国际化",
   };
 
   static List<RouterBean> allRoutes = [
@@ -389,6 +391,14 @@ class RouterConfig {
       "packageAndPlugin",
       (context) => PluginDevelopAbout(
             title: "插件开发",
+          ),
+    ),
+    RouterBean(
+      "/localizationabout",
+      "实现Localizations",
+      "localization",
+      (context) => LocalizationAbout(
+            title: "实现Localizations",
           ),
     ),
   ];

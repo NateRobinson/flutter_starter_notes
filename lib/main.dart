@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_starter_notes/config/RouterConfig.dart';
+import 'package:flutter_starter_notes/ui/LocalizationAbout.dart';
 
 void main() {
   debugPaintSizeEnabled = false; //打开视觉调试开关
@@ -21,6 +23,18 @@ class MyApp extends StatelessWidget {
       ),
       initialRoute: '/',
       routes: RouterConfig.genRouters(),
+      // Material 和 widgets 支持多语言
+      localizationsDelegates: [
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+        // 注册我们的Delegate
+        DemoLocalizationsDelegate()
+      ],
+      supportedLocales: [
+        const Locale("en", "US"),
+        const Locale("zh", "CN"),
+      ],
+      //locale: const Locale('en', 'US'), //手动指定 locale
     );
   }
 }

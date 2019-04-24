@@ -14,6 +14,10 @@
 
 本项目的结构和开源电子书 [https://github.com/flutterchina/flutter-in-action](https://github.com/flutterchina/flutter-in-action) 目录保持一致，学习的时候可以一边学习书籍内容，一边参考此项目进行代码实践。
 
+# Flutter 知识结构思维脑图
+
+<img src="./noteimgs/xmind.png" height="800">
+
 # 目录
 
 - [1. 基础 Widgets](#1-基础-widgets)
